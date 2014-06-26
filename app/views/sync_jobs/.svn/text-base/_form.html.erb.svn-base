@@ -1,0 +1,15 @@
+<%= simple_form_for(@sync_job) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :exceptions %>
+    <%= f.input :started_at %>
+    <%= f.input :started_by %>
+    <%= f.input :completed_at %>
+    <%= f.input :workflow_state %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

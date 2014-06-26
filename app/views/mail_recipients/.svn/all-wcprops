@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tvly/build-tools/!svn/ver/11888/trunk/stratus/app/views/mail_recipients
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/app/views/mail_recipients/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tvly/build-tools/!svn/ver/10529/trunk/stratus/app/views/mail_recipients/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/app/views/mail_recipients/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/11888/trunk/stratus/app/views/mail_recipients/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/app/views/mail_recipients/_form.html.erb
+END

@@ -1,0 +1,18 @@
+<div>
+<% if @config.show_latest_releases? %>
+  <h4>Latest Releases in DSL</h4>
+  <% if @latest_releases.size == 0 %>
+    <em>reloading...</em>
+  <% else %>
+    <table class="table table-striped">
+    <% @latest_releases.each do |r| %>
+      <tr>
+        <td><%= r.version %></td>
+      </tr>
+    <% end %>
+    </table>
+  <% end %>
+<% else %>
+  <a href="#" class="badge span3" style="margin-left:0px;" rel="popover" data-trigger="hover" data-html="true" data-content="Latest Releases is turned off in the system configuration.  If you are an admin, you can <em>edit the system configuration</em> to turn it on." ><i class="icon-wrench"></i> Latest Releases</a>
+<% end %>
+</div>

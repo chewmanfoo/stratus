@@ -1,0 +1,37 @@
+<%- model_class = Refresh -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong>Status:</strong></dt>
+  <dd class="clearfix"><%= refresh_status(@refresh) %></dd>
+  <dt><strong>State:</strong></dt>
+  <dd class="clearfix"><%= refresh_state(@refresh) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @refresh.created_at.to_s(:pretty) %>
+    <% if @refresh.creator_email.blank? %>
+    <strong>by</strong> <%= @refresh.creator_given_name %>
+    <% else %>
+    <strong>by</strong> <%= mail_to @refresh.creator_email, @refresh.creator_given_name %>
+    <% end %>
+  </dd>
+  <dt><strong><%= model_class.human_attribute_name(:environment_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @refresh.environment_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:role_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @refresh.role_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:changelist) %>:</strong></dt>
+  <dd class="clearfix"><%= @refresh.changelist %></dd>
+  <dt><strong>Affecting:</strong></dt>
+  <% unless @refresh.servers.blank? %>
+  <dd class="clearfix"><%= refresh_servers_links(@refresh.servers) %></dd>
+  <% else %>
+  <dd class="clearfix"><strong><span class="text-error">No servers found!</span></strong></dd>
+  <% end %>
+  <dt><strong>Logs:</strong></dt>
+  <dd class="clearfix"><div class="well"><%= log_formatter(@refresh) %></div></dd>
+</dl>
+
+<div class="form-actions">
+  <%= refresh_form_actions(@refresh) %>
+</div>

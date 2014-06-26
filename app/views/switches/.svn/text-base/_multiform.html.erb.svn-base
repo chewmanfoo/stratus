@@ -1,0 +1,21 @@
+<%= simple_form_for @switch, :html => { :class => 'form-horizontal' },
+                             :url => url_for(:action => 'multicreate', :controller => 'switches'),
+                             :method => 'post' do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.input :switch_names, :as => :text, :input_html => { :cols => 20, :rows => 5 }, :hint => "Enter a comma-delimited set of switch names" %>
+  <%= f.input :build_number %>
+  <%= f.association :environment, :hint => "Choose the environment where the switch will be deployed." %>
+  <%= f.association :role, :collection => roles, :hint => "if unsure, leave it blank" %>
+  <%= f.association :mail_recipient, :collection => mail_recipients, :hint => "please choose a Mail Recipient to recieve status emails." %>
+  <div class="form-actions">
+    <%= f.button :submit, "Create Switches", :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                switches_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<%= simple_form_for(@checkout_result_detail) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :result %>
+    <%= f.input :checkout_result_id %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

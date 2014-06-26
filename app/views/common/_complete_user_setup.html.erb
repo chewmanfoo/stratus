@@ -1,0 +1,13 @@
+<div class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Complete your User Setup!</h3>
+  </div>
+  <div class="modal-body">
+    <p>Your User account setup is not complete.  In order to use stratus, you need to save your email, subversion login and subversion password into your User account.  Click the OK button below to do this.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <%= link_to "OK, take me there now!", edit_user_path(current_user), :class => "btn btn-primary" %>
+  </div>
+</div>

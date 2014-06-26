@@ -1,0 +1,53 @@
+<%- model_class = Application -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => "#{model_class.model_name.human} #{@application.name}" %></h1>
+</div>
+
+<table class="table">
+  <tr>
+    <td>
+      <%= image_tag "application.png" %>
+    </td>
+    <td>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @application.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:version) %>:</strong></dt>
+  <dd class="clearfix"><%= @application.version %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:check_reo_for_approval) %>:</strong></dt>
+  <dd class="clearfix"><%= @application.check_reo_for_approval %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:appropriate_roles) %>:</strong></dt>
+  <dd class="clearfix"><%= @application.appropriate_roles.map(&:name).uniq.join(',') %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:deployment_plan) %>:</strong></dt>
+  <dd class="clearfix"><%= link_to @application.deployment_plan_name, @application.deployment_plan if @application.deployment_plan %></dd>
+  <dt><strong>Note:</strong></dt>
+  <dd class="clearfix"><% if @application.use_oos_for_deployments? %>This Application requires OOS in the following environments: <%= @application.oos_environments.map(&:name).join(',') %><% end %></dd>
+</dl>
+    </td>
+  </tr>
+</table>
+
+<!-- insert jump_page_links table here -->
+<h3>Jump Page</h3>
+  <%= render :partial => "jumppage", :locals => {:app => @application} %>
+
+<h3>Whatwhere</h3>
+  <%= render :partial => "whatwhere", :locals => {:app => @application} %>
+
+<h3>Servers</h3>
+  <%= render :partial => "servers", :locals => {:app => @application} %>
+
+<h3>Deployment Plan</h3>
+  <%= render :partial => "deployment_plans", :locals => {:deployment_plan => @deployment_plan} %>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              applications_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_application_path(@application), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              application_path(@application),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

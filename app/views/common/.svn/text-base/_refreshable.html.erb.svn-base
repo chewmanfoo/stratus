@@ -1,0 +1,14 @@
+
+  <div class="alert">
+  <div style="margin:0;padding:0;display:inline">
+  <%= button_to "", "#", :class => "refreshable_refresh_button", :style => "position: absolute; left: -9999px", :remote => true %>
+  <b>
+    <%= content_tag_for(:div, r) do %>
+    <%= link_to( r.partial_name, r, "rel" => "popover", "data-title" => "#{refresh_popover_title(r, r.current_state.to_s)}", "data-html" => "true", "data-content" => "#{refresh_popover_summary(r, r.current_state.to_s)}", "data-trigger" => "hover") %></b><span class="label label-info"></span><br />
+        <%= render :partial => "common/refresh_state_td", :locals => {:w => r} %><br /> 
+        <div class="pull-right"><%= refresh_buttons(r) %></div>
+        <br />
+    <% end %>
+  <hr />
+  </div>
+</div>

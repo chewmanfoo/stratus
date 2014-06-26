@@ -1,0 +1,101 @@
+<h1>Searcher</h1>
+
+<h2>Applications</h2>
+<% unless @applications.blank? %>
+<table class="table table-striped">
+  <thead>
+  </thead>
+  <tbody>
+    <% @applications.each do |a| %>
+      <tr><td><%= link_to a.name, a %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+<div class="form-actions">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_application_path,
+            :class => 'btn btn-primary' %>
+</div>
+
+<h2>Servers</h2>
+<% unless @servers.blank? %>
+<table class="table table-striped">
+  <thead>
+  </thead>
+  <tbody>
+    <% @servers.each do |s| %>
+      <tr><td><%= link_to s.name, s %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+<div class="form-actions">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_server_path,
+            :class => 'btn btn-primary' %>
+</div>
+
+<h2>Environments</h2>
+<% unless @environments.blank? %>
+<table class="table table-striped">
+  <thead>
+  </thead>
+  <tbody>
+    <% @environments.each do |e| %>
+      <tr><td><%= link_to e.name, e %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+<div class="form-actions">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_environment_path,
+            :class => 'btn btn-primary' %>
+</div>
+
+<h2>Roles</h2>
+<% unless @roles.blank? %>
+<table class="table table-striped">
+  <thead>
+  </thead>
+  <tbody>
+    <% @roles.each do |r| %>
+      <tr><td><%= link_to r.name, r %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+<div class="form-actions">
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_role_path,
+            :class => 'btn btn-primary' %>
+</div>
+
+<% unless @deployments.blank? %>
+<h2>Deployments</h2>
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr><th>Name</th><th>Created</th><th>Started</th></tr>
+  </thead>
+  <tbody>
+    <% @deployments.sort_by(&:created_at).reverse.each do |d| %>
+      <tr><td><%= link_to d.name, d %></td><td><%= d.created_at.to_s(:pretty) %></td><td><%= d.started_at.to_s(:pretty) if d.started_at %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>
+
+<% unless @switches.blank? %>
+<h2>Switches</h2>
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr><th>Name</th><th>Created</th><th>Started</th></tr>
+  </thead>
+  <tbody>
+    <% @switches.sort_by(&:created_at).reverse.each do |s| %>
+      <tr><td><%= link_to s.name, s %></td><td><%= s.created_at.to_s(:pretty) %></td><td><%= s.started_at.to_s(:pretty) if s.started_at %></td></tr>
+    <% end %>
+  </tbody>
+</table>
+<% end %>

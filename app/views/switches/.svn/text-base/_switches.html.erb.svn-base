@@ -1,0 +1,38 @@
+<% if switches.size > 0 %>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Build</th>
+      <th>Details</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% switches.each do |r| %>
+      <tr>
+        <td>
+          <%= link_to r.name, r %>
+        </td>
+        <td>
+          <%= r.build_number %>
+        </td>
+        <td>
+          <%= switch_details(r) %>
+        </td>
+        <td>
+          <%= switch_status(r) %><br />
+          <%= switch_state(r) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <caption>
+    All Incomplete or Rejected Switch Deployments in Stratus as of <%= Time.now.to_s(:pretty) %>
+  </caption>
+</table>
+<% else %>
+  <div class="alert alert-info">
+    There are currently no Incomplete or Rejected Switch Deployments in Stratus as of <%= Time.now.to_s(:pretty) %>
+  </div>
+<% end %>

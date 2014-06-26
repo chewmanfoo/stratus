@@ -1,0 +1,36 @@
+<%- model_class = AuthKey -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:key) %></th>
+      <th><%= model_class.human_attribute_name(:created_by) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @auth_keys.each do |auth_key| %>
+      <tr>
+        <td><%= link_to auth_key.name, auth_key_path(auth_key) %><br />
+        <%= auth_key.key %></td>
+        <td><%= auth_key.creator.given_name %><br />
+        <%= auth_key.created_at.to_s(:pretty) %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_auth_key_path(auth_key), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      auth_key_path(auth_key),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_auth_key_path,
+            :class => 'btn btn-primary' %>

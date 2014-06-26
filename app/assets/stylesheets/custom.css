@@ -1,0 +1,5 @@
+.centered-container {
+  margin: 0 auto;
+  width: 263px; /* Whatever exact width you are looking for (not bound by preset bootstrap widths) */
+  margin-bottom: 30px;
+}

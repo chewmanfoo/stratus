@@ -1,0 +1,41 @@
+<%- model_class = DeploymentPlan -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:application_id) %>:</strong></dt>
+  <dd class="clearfix"><%= link_to @deployment_plan.application_name, @deployment_plan.application %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mail_recipient_id) %>:</strong></dt>
+  <dd class="clearfix"><%= link_to @deployment_plan.mail_recipient_name, @deployment_plan.mail_recipient %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:stop_auto_promote_environment_id) %>:</strong></dt>
+  <dd class="clearfix"><%= link_to @deployment_plan.stop_auto_promote_environment_name, @deployment_plan.stop_auto_promote_environment %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:run_pre_checkout) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.run_pre_checkout %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:run_post_checkout) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.run_post_checkout %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:use_oos_for_deployments) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.use_oos_for_deployments %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:use_batch_group_for_oos) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.use_batch_group_for_oos %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:oos_percentage) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.oos_percentage %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:oos_environments) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.oos_environments.map(&:name).join(',') %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:bleedoff_seconds) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_plan.bleedoff_seconds %>s</dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              deployment_plans_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_deployment_plan_path(@deployment_plan), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              deployment_plan_path(@deployment_plan),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

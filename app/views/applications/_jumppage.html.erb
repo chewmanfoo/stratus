@@ -1,0 +1,13 @@
+<div class="well">
+
+  <% @application.jump_page_links.each do |l| %>
+    <%= link_to(l.url, :target => "_blank") do %>
+      <i class="icon-star-empty"></i> <%= l.name %>
+    <% end %>
+    <br />
+  <% end %>
+
+  <div class="pull-right">
+    <%= link_to "Add a link", new_jump_page_link_path(:application_id => @application.id), :class => 'btn btn-mini btn-primary' %>
+  </div>
+</div>

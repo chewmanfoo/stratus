@@ -1,0 +1,40 @@
+<%- model_class = Switch -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @switch.full_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mail_recipient_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @switch.mail_recipient_name || "none" %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @switch.created_at.to_s(:pretty) %></dd>
+  <dt><strong>Status:</strong></dt>
+  <dd class="clearfix"><%= switch_status(@switch) %></dd>
+  <dt><strong>State:</strong></dt>
+  <dd class="clearfix"><%= switch_state(@switch) %></dd>
+  <dt><strong>Deploying to:</strong></dt>
+  <dd class="clearfix"><%= @switch.servers.map(&:name).join(', ') if @switch.servers %><%= "none" if @switch.servers.blank? %></dd>
+  <dt><strong>Logs:</strong></dt>
+  <dd class="clearfix"><div class="well"><%= log_formatter(@switch) %></div></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              switches_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_switch_path(@switch), :class => 'btn' %>
+  <%= link_to t('.clone', :default => t("helpers.links.clone")),
+              clone_switch_path(:id => @switch.id), :class => 'btn btn-mini' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              switch_path(@switch),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' if @switch.destroyable? || admin? %>
+  <%= link_to("complete!", complete_switch_path(:id => @switch.id), :class => 'btn btn-mini btn-success', :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Complete informs everyone that the switch deployment is verified complete.  Are you sure?')) }) if @switch.completable? %>
+  <%= link_to("start!", start_switch_path(:id => @switch.id), :class => 'btn btn-mini btn-success', :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Start executes the switch deployment.  Are you sure?')) }) if @switch.startable? %>
+  <%= link_to("accept!", accept_switch_path(:id => @switch.id), :class => 'btn btn-mini btn-primary', :rel => "popover", :data => {:content => "accepts this Switch into your workload", :title => "What is this?", :trigger => "hover"}) << " or" if @switch.acceptable? %>
+  <%= link_to("reject!", reject_switch_path(:id => @switch.id), :class => 'btn btn-mini btn-warning reject', :data => {:content => reject_switch_path(:id => @switch.id), :title => "Rejection reason"}) if @switch.rejectable? %>
+  <%= link_to("proceed!", proceed_switch_path(:id => @switch.id), :class => 'btn btn-mini btn-warning') if current_user_is_me? %>
+</div>

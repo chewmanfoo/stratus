@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>A Deployment has been created on Stratus</h1>
+    <p>
+      <%= @user.given_name %>, <%= @user_desc %> has created a Deployment request for <%= @deployment.full_name %> on Stratus at <%= @deployment.created_at.to_s(:pretty) %>.  The responsible parties are aware of the Deployment request, and will complete the request as soon as possible.  
+    </p>
+    <p>
+      To read about this deployment, just follow this link: <%= @url %>.
+    </p>
+    <p>Thanks for using Stratus and have a great day!</p>
+  </body>
+</html>

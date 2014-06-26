@@ -1,0 +1,30 @@
+<%= simple_form_for deployment, :validate => false, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.association :application, :label => "Application" %>
+  <%#= f.input :application_tokens, :label => "Application", :input_html => { :data => { load: deployment.application_tokens, :size => "50" }} %>
+  <%= f.input :build_number, :hint => "e.g. 12.13.133-1.  This must be exact." %> 
+<!--  <div class="control-group"><div class="controls">or</div></div> -->
+  <%#= f.input :latest %>
+  <%= f.association :environment, :hint => "Note: requests for deployment to CERT2, CERT1, STAGING or PROD may be rejected.  You should use REO for these requests." %>
+  <%= f.association :role, :hint => "Choose the role where you'd like this application to be deployed." %>
+  <%= f.association :mail_recipient, :collection => mail_recipients, :hint => "Please choose a Mail Recipient to recieve status emails.  If your Mail Recipient isn't listed, you must create one first." %>
+  <%= f.input :changelist, :hint => "Ok to leave blank." %> 
+  <%= f.input :reason, :hint => "Ok to leave blank unless Environment requires reason." %> 
+  <%= f.input :run_pre_checkout %>
+  <%= f.input :run_post_checkout %>
+  <%= f.input :skip_diskspace_check %>
+  <%= f.input :auto_promote %>
+  <%= f.input :auto_accept %>
+  <%= f.input :auto_start %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= submit_tag 'Cancel', :type => :reset, :class => "btn btn-danger" %>
+  </div>
+
+<% end %>

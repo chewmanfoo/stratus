@@ -1,0 +1,14 @@
+<%= simple_form_for @auth_key, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :key %>
+  <%= f.input :created_by %>
+  <%= f.input :authorized_host_ip %>
+  <%= f.input :active %>
+  <%= f.input :seed %>
+  <%= f.input :salt %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                auth_keys_path, :class => 'btn' %>
+  </div>
+<% end %>

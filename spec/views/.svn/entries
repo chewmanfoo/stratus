@@ -1,0 +1,106 @@
+10
+
+dir
+12691
+http://tcysvn01.dev.sabre.com/tvly/build-tools/trunk/stratus/spec/views
+http://tcysvn01.dev.sabre.com/tvly/build-tools
+
+
+
+2014-03-06T18:41:31.680336Z
+12663
+jmichael
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6ebecf9e-bb1c-0410-aa32-b2e7cd19b9e1
+
+latest_releases
+dir
+
+server_sync_jobs
+dir
+
+flow_parts
+dir
+
+sync_applications
+dir
+
+approved_builds
+dir
+
+chores
+dir
+
+refreshes
+dir
+
+checkout_results
+dir
+
+applications_servers_sync_report
+dir
+
+sync_jobs
+dir
+
+app_sync_reports
+dir
+
+flows
+dir
+
+searcher
+dir
+
+auth_keys
+dir
+
+app_syncs
+dir
+
+jump_page_links
+dir
+
+checkout_result_details
+dir
+
+role_sync_jobs
+dir
+
+deployment_requests
+dir
+
+application_sync_jobs
+dir
+
+applications_sync_report
+dir
+
+deployment_plans
+dir
+
+retries
+dir
+
+esr_works
+dir
+
+environment_sync_reports
+dir
+
+deployment_sets
+dir
+

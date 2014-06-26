@@ -1,0 +1,59 @@
+<%- model_class = Deployment -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<% if @deployment.in_retry? && @use_help_mailer %>
+<div class="pull-right">
+    <%= link_to get_help_deployment_url, :class => "btn btn-danger" do %>
+      <i class="icon-fire"></i> Email DevServices
+    <% end %>
+</div>
+<% end %>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:package) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment.full_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:mail_recipient_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment.mail_recipient_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:rollback_build_number) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment.rollback_build_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment.created_at.to_s(:pretty) %> 
+    <% if @deployment.creator_email.blank? %>
+    <strong>by</strong> <%= @deployment.creator_given_name %>
+    <% else %>
+    <strong>by</strong> <%= mail_to @deployment.creator_email, @deployment.creator_given_name %>
+    <% end %>
+  </dd>
+  <dt><strong>Status:</strong></dt>
+  <dd class="clearfix"><%= deployment_status(@deployment) %></dd>
+  <dt><strong>State:</strong></dt>
+  <dd class="clearfix"><%= deployment_state(@deployment) %></dd>
+  <dt><strong>Batch:</strong></dt>
+  <dd class="clearfix"><%= @deployment.batch %></dd>
+  <dt><strong>Batch Group:</strong></dt>
+  <dd class="clearfix"><%= @deployment.batch_group_name %></dd>
+  <dt><strong>Reason (change #):</strong></dt>
+  <dd class="clearfix"><%= @deployment.reason %></dd>
+  <dt><strong>Deploying to:</strong></dt>
+  <% unless @deployment.servers.blank? %>
+  <dd class="clearfix"><%= deployment_servers_links(@deployment.servers) %></dd>
+  <% else %>
+  <dd class="clearfix"><strong><span class="text-error">No servers found!</span></strong></dd>
+  <% end %>
+  <% if @deployment.run_pre_checkout? %>
+    <dt><strong>Pre-Checkout</strong></dt>
+    <dd class="clearfix"><%= checkout_formatter(@deployment.pre_checkout) %></dd>
+  <% end %>
+  <% if @deployment.run_post_checkout? %>
+    <dt><strong>Post-Checkout</strong></dt>
+    <dd class="clearfix"><%= checkout_formatter(@deployment.post_checkout) %></dd>
+  <% end %>
+  <dt><strong>Logs:</strong></dt>
+  <dd class="clearfix"><div class="well"><%= log_formatter(@deployment) %></div></dd>
+</dl>
+
+<div class="form-actions">
+  <%= deployment_form_actions(@deployment) %>
+</div>

@@ -1,0 +1,23 @@
+<%= simple_form_for @switch, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.input :name %>
+  <%= f.input :build_number %>
+  <%= f.input :supercedes_name, :label => "Supercedes", :hint => "the name of the switch this new switch supercedes. For example, 'turn-magic-off' supercedes 'turn-magic-on'" %>
+  <%= f.input :supercedes_build_number, :hint => "the build number of the switch this new switch supercedes" %>
+  <%= f.association :environment, :hint => "the environment where the switch will be deployed." %>
+  <%= f.association :role, :collection => roles, :hint => "the role where the switch will be deployed" %>
+  <%= f.input :deploy_to_first_server_only, :input_html => { :value => '1' }, :hint => "deploy the switch only to the first server (alphabetically) in the list of servers in the role" %>
+  <%= f.input :default_after, :input_html => { :value => '1' }, :hint => "remove the switch from configuration after successful deployment" %>
+  <%= f.association :mail_recipient, :collection => mail_recipients, :hint => "please choose a Mail Recipient to recieve status emails." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                switches_path, :class => 'btn' %>
+  </div>
+<% end %>

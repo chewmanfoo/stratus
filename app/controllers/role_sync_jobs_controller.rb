@@ -1,0 +1,39 @@
+class RoleSyncJobsController < InheritedResources::Base
+  before_filter :authenticate_user!
+  before_filter :setup
+
+  def start
+    if @role_sync_job
+      @role_sync_job.update_attribute(:started_by, current_user.id)
+      @role_sync_job.update_attribute(:started_at, Time.now)
+      @role_sync_job.start!
+    end
+  end
+
+  def create
+    @role_sync_job = RoleSyncJob.new(params[:role_sync_job])
+    if @role_sync_job.save
+      flash[:notice] = "Successfully created Role Sync Job."
+      start
+      redirect_to @role_sync_job
+    else
+      render :action => 'new'
+    end
+  end
+
+private
+  def setup
+    @start_datetime = Time.now
+    @role_sync_job = RoleSyncJob.find(params[:id]) if params[:id]
+    @current_jobs = RoleSyncJob.inflight
+    @config = SystemConfiguration.in_effect
+    @useful_links = UsefulLink.all.sort_by(&:name)
+    @latest_releases = LatestRelease.latest_batch
+    @rubyver = `ruby -v`.gsub("\n","")
+    @railsver = `rails -v`.gsub("\n","")
+    @railsenv = `echo $RAILS_ENV`
+    @sidekiqstat = `ps -ef | grep sidekiq|grep -v grep|awk '{print $8" "$9" "$10" "$11" "$12" "$13" "$14}'`
+    @sidekiqpex = `ps -ef | grep sidekiq|grep -v grep`
+    @sidekiqex = $?.exitstatus
+  end
+end

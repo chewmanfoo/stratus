@@ -1,0 +1,19 @@
+<table class="table table-condensed">
+  <tbody>
+<% workload.select {|s| s.class.to_s == "Deployment"}.group_by(&:deployment_set).each do |s,w| %>
+    <tr>
+        <td><%= render :partial => "common/deployable", :locals => {:s => s, :w => w} %>
+        </td>
+    </tr>
+<% end %>
+<% workload.select {|s| s.class.to_s == "Switch"}.group_by(&:deployment_set).each do |s,w| %>
+    <tr>
+        <td><%= render :partial => "common/deployable", :locals => {:s => s, :w => w} %>
+        </td>
+    </tr>
+<% end %>
+  </tbody>
+  <caption>
+    <%= pluralize(workload.select {|i| i.instance_of? Switch}.size, "Switch Deployment") %>, <%= pluralize(workload.select {|i| i.instance_of? Deployment}.size, "Package Deployment") %> 
+  </caption>
+</table>

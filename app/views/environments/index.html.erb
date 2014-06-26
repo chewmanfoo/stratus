@@ -1,0 +1,37 @@
+<%- model_class = Environment -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:next_environment) %></th>
+      <th><%= model_class.human_attribute_name(:requires_reason) %><br/><span class="text-muted">Environment requires a Change Record for changes</span></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @environments.each do |env| %>
+      <tr>
+        <td><%= link_to env.name, environment_path(env) %></td>
+        <td><%= env.next_environment_name %></td>
+        <td><%#= env.created_at.to_s(:pretty) %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_environment_path(env), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      environment_path(env),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_environment_path,
+            :class => 'btn btn-primary' %>

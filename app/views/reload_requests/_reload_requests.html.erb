@@ -1,0 +1,43 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Package</th>
+      <th>Build</th>
+      <th>Details</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% reload_requests.each do |r| %>
+      <tr>
+        <td>
+          <%= r.package %>
+        </td>
+        <td>
+          <%= r.build_number %>
+        </td>
+        <td>
+          <%= reload_request_details(r) %>
+        </td>
+        <td>
+          <% if r.rejected_by %>
+            rejected at <%= r.rejected_at %>
+          <% elsif r.accepted_by %>
+            accepted at <%= r.accepted_at %> <br />
+            <% if r.completed_by %>
+              completed at <%= r.completed_at %>
+            <% else %>
+              <%= link_to "complete!", complete_reload_request_path(:id => r.id) %>
+            <% end %>
+          <% else %>
+            <%= link_to "accept!", accept_reload_request_path(:id => r.id) %> or
+            <%= link_to "reject!", reject_reload_request_path(:id => r.id) %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <caption>
+    All Reload Requests in Stratus as of <%= Time.now %>
+  </caption>
+</table>

@@ -1,0 +1,69 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 27
+/tvly/build-tools/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/tvly/build-tools/!svn/ver/12674/trunk/stratus
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/tvly/build-tools/!svn/ver/12774/trunk/stratus/Gemfile.lock
+END
+env.csv
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/env.csv
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/Rakefile
+END
+cloud_icon_b.png
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/cloud_icon_b.png
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/README.rdoc
+END
+reload
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/tvly/build-tools/!svn/ver/11648/trunk/stratus/reload
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/tvly/build-tools/!svn/ver/12795/trunk/stratus/Gemfile
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config.ru
+END
+.rspec
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/tvly/build-tools/!svn/ver/10778/trunk/stratus/.rspec
+END
+stratus.spec
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/tvly/build-tools/!svn/ver/12625/trunk/stratus/stratus.spec
+END

@@ -1,0 +1,13 @@
+<table class="table table-condensed">
+  <tbody>
+<% refreshes.each do |r| %>
+    <tr>
+        <td><%= render :partial => "common/refreshable", :locals => {:r => r} %>
+        </td>
+    </tr>
+<% end %>
+  </tbody>
+  <caption>
+    <%= pluralize(refreshes.size, "Refresh") %> 
+  </caption>
+</table>

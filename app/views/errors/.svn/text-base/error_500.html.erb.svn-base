@@ -1,0 +1,16 @@
+<div class="hero-unit">
+  <h1>500</h1>
+  <p>Our fault.  Bear with us as we recover...</p>
+  <p>
+    <%= image_tag "burning.gif" %>
+  </p>
+  <p>
+    <%= debug params %>
+  </p>
+  <p>
+    <%= debug flash %>
+  </p>
+  <p>
+    <%= debug @exception %>
+  </p>
+</div>

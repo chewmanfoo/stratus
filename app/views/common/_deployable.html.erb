@@ -1,0 +1,19 @@
+<% if w.first.class.to_s == "Deployment" %>
+  <div class="alert alert-info"> 
+<% else %>
+  <div class="alert">
+<% end %>
+  <div style="margin:0;padding:0;display:inline">
+<% w.each do |e| %>
+  <%= button_to "", "#", :class => "deployable_refresh_button", :style => "position: absolute; left: -9999px", :remote => true %>
+  <b>
+    <%= content_tag_for(:div, e) do %>
+    <%= link_to( e.partial_name, e, "rel" => "popover", "data-title" => "#{deployment_popover_title(e, e.current_state.to_s)}", "data-html" => "true", "data-content" => "#{deployment_popover_summary(e, e.current_state.to_s)}", "data-trigger" => "hover") %></b> <%= e.target_name %> <span class="label label-info"><%= e.batch %></span><br />
+        <%= render :partial => "common/deployment_state_td", :locals => {:w => e} %><br /> 
+        <div class="pull-right"><%= e.class.to_s == "Deployment" ? deployment_buttons(e) : switch_buttons(e) %></div>
+        <br />
+    <% end %>
+  <hr />
+<% end %>
+  </div>
+</div>

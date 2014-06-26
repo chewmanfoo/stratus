@@ -1,0 +1,33 @@
+<%- model_class = ReloadRequest -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:latest) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.latest %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:build_number) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.build_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:environment_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.environment_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:package) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.package %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:role_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.role_id %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:to_release_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.to_release_at %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email_notification_list) %>:</strong></dt>
+  <dd class="clearfix"><%= @reload_request.email_notification_list %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              reload_requests_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_reload_request_path(@reload_request), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              reload_request_path(@reload_request),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

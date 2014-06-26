@@ -1,0 +1,12 @@
+<%= simple_form_for @deployment_request, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :package, :hint => "this is the exact name of an Application in stratus" %>
+  <%= f.input :build, :hint => "e.g. 12.13.133-1.  This must be exact." %>
+  <%= f.input :environment, :hint => "This must match the name of an Environment in stratus.  Note: requests for deployment to CERT2, CERT1, STAGING or PROD may be rejected.  You should use REO for these requests." %>
+  <%= f.input :auth_key, :hint => "your user auth key." %>
+  <%= f.input :timing_delay, :hint => "1-8 indicating the number of hours to delay this deployment before starting it." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                deployment_requests_path, :class => 'btn' %>
+  </div>
+<% end %>

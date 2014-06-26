@@ -1,0 +1,35 @@
+<%- model_class = Flow -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @flow.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:environment_id) %>:</strong></dt>
+  <dd><%= link_to @flow.environment_name, environment_path(@flow.environment) if @flow.environment %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:role_id) %>:</strong></dt>
+  <dd><%= link_to @flow.role_name, role_path(@flow.role) if @flow.role %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:application_id) %>:</strong></dt>
+  <dd><%= link_to @flow.application_name, application_path(@flow.application) if @flow.application %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:build_number) %>:</strong></dt>
+  <dd><%= @flow.build_number %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:latest) %>:</strong></dt>
+  <dd><%= @flow.latest %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:reason) %>:</strong></dt>
+  <dd><%= @flow.reason %></dd>
+  <dt><strong>Flow Parts:</strong></dt>
+  <dd><%= flow_parts_bubbles(@flow) %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              flows_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_flow_path(@flow), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              flow_path(@flow),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

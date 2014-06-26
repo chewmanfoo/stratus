@@ -1,0 +1,9 @@
+<%- model_class = Deployment -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                   :default => "Create #{model_class.model_name.human}") %></h1>
+</div>
+<%= render :partial => 'form', :locals => {:deployment => @deployment, :applications => @applications,
+                                           :roles => @roles, :environments => @environments, 
+                                           :mail_recipients => @mail_recipients} %>
+

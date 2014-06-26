@@ -1,0 +1,43 @@
+<%- model_class = Server -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => @server.name %></h1>
+</div>
+
+<table class="table">
+  <tr>
+    <%= server_icon_and_name(@server, "full") %>
+    <td>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.name  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:role_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.role_name  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:runtime_env) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.runtime_env  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:environment_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.environment_name  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:classes) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.classes  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:switches) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.switches  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:sub_runtime_env) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.sub_runtime_env  %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:batch_group) %>:</strong></dt>
+  <dd class="clearfix"><%= @server.batch_group  %></dd>
+</dl>
+    </td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= server_operations_buttons(@server) %>
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              servers_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_server_path(@server), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              server_path(@server),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' if current_user_is_me? %>
+</div>

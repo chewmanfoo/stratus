@@ -1,0 +1,21 @@
+<%= simple_form_for reload_request, :validate => false, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.input :package %>
+  <%= f.input :build_number %> 
+  <div class="control-group"><div class="controls">or</div></div> 
+  <%= f.input :latest %>
+  <%= f.association :environment, :hint => "Environments are fun!" %>
+  <%= f.association :role, :collection => roles, :hint => "if unsure, leave it blank" %>
+  <%= f.input :email_notification_list, :as => :text, :input_html => { :rows => 4, :cols => 40, :class => 'resizable' }, :hint => "A comma-delimited set of email addresses. Internal only please." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= submit_tag 'Cancel', :type => :reset, :class => "btn btn-danger" %>
+  </div>
+
+<% end %>

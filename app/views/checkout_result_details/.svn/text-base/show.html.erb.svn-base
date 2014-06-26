@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @checkout_result_detail.name %>
+</p>
+
+<p>
+  <b>Result:</b>
+  <%= @checkout_result_detail.result %>
+</p>
+
+<p>
+  <b>Checkout result:</b>
+  <%= @checkout_result_detail.checkout_result_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_checkout_result_detail_path(@checkout_result_detail) %> |
+<%= link_to 'Back', checkout_result_details_path %>

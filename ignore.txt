@@ -1,0 +1,9 @@
+stratus.pid
+stratus-lock
+Guardfile
+ignore.txt
+tmp/
+junk/
+log/
+public/assets/
+public/assets/*

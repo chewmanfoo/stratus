@@ -1,0 +1,21 @@
+class CheckBuildOnServerWorker < GenericWorker
+
+  def do_perform(event_id)
+    @event = Deployment.find(event_id)
+
+    raise UserTerminatedException unless check_terminated("CheckBuildOnServerWorker", @event)
+
+    @event.class.log_result(@event, "CheckBuildOnServerWorker::perform -> start")
+
+    @event.servers.each do |ts|
+      @task2 = "#{@ssh_cmd} ssh -q -o 'UserKnownHostsFile=/dev/null' -o 'StrictHostKeyChecking=no' #{ts.name} rpm -q #{@event.application_name} --queryformat '%{VERSION}-%{RELEASE}'"
+
+      raise UnixFailedExitException unless perform_unix_record_result("CheckBuildOnServerWorker", @event, @task2, "rollback_build_number") 
+    end
+
+    @event.class.log_result(@event, "CheckBuildOnServerWorker::perform -> end")
+    @event.class.log_result(@event, "CheckBuildOnServerWorker::perform -> SUCCESS: [#{@result}]")
+    @event.proceed_subversion_file!
+  end
+
+end

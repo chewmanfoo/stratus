@@ -1,0 +1,8 @@
+<%- model_class = Switch -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                   :default => "Edit #{model_class.model_name.human}") %></h1>
+</div>
+<%= render :partial => 'form', :locals => {:switch => @switch, :roles => @roles,
+                                           :environments => @environments, 
+                                           :mail_recipients => @mail_recipients} %>

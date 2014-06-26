@@ -1,0 +1,22 @@
+<%= simple_form_for @group, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :admin %>
+  <%= f.input :active %>
+  <%= f.input :manages_users %>
+  <%= f.input :manages_database %>
+  <%= f.input :manages_system %>
+  <%= f.input :manages_threads %>
+  <%= f.input :creates_deployments %>
+  <%= f.input :creates_switches %>
+  <%= f.input :executes_deployments %>
+  <%= f.input :executes_switches %>
+  <%= f.input :creates_reports %>
+  <%= f.input :views_reports %>
+  <%= f.input :refreshes_tripcase %>
+  <%= f.input :approves %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                groups_path, :class => 'btn' %>
+  </div>
+<% end %>

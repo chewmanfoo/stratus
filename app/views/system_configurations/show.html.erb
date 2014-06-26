@@ -1,0 +1,82 @@
+<%- model_class = SystemConfiguration -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<table class="table">
+  <tr>
+  <% if @system_configuration.in_effect? %>
+    <td>
+      <%= image_tag "padlock-icon-highlight.png" %>
+    </td>
+  <% else %>
+    <td>
+      <%= image_tag "padlock-icon.png" %>
+    </td>
+  <% end %>
+    <td>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:created_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.created_at.to_s(:pretty) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:updated_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.updated_at.to_s(:pretty) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:in_effect) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.in_effect %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:debug_mode) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.debug_mode %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:deployments_future_schedulable) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.deployments_future_schedulable %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:deployment_kod) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.deployment_kod %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:check_reo_for_deployments_approval) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.check_reo_for_deployments_approval %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:allow_deployment_requests) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.allow_deployment_requests %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:allow_auto_promotion) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.allow_auto_promotion %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:switches_future_schedulable) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.switches_future_schedulable %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:send_emails) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.send_emails %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:num_latest_releases) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.num_latest_releases %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:verify_switches) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.verify_switches %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:show_latest_releases) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.show_latest_releases %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:show_latest_webapp) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.show_latest_webapp %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:disc_space_threshold) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.disc_space_threshold %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:use_oos_for_deployments) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.use_oos_for_deployments %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:check_disc_space_deployments) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.check_disc_space_deployments %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:use_timer_service) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.use_timer_service %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:enable_puppet_refresh_cron) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.enable_puppet_refresh_cron %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:puppet_refresh_batchsize) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.puppet_refresh_batchsize %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:puppet_refresh_cron_timings) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.puppet_refresh_cron_timings %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:allow_delete_set) %>:</strong></dt>
+  <dd class="clearfix"><%= @system_configuration.allow_delete_set %></dd>
+</dl>
+    </td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              system_configurations_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_system_configuration_path(@system_configuration), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              system_configuration_path(@system_configuration),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

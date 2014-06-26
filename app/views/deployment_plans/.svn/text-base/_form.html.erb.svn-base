@@ -1,0 +1,18 @@
+<%= simple_form_for @deployment_plan, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.association :application %>
+  <%= f.association :mail_recipient, :hint => "The email addresses which receive notification as a deployment progresses to completion." %>
+  <%= f.association :stop_auto_promote_environment, :hint => "The Environment where auto-promote should stop." %>
+  <%= f.input :run_pre_checkout, :hint => "Run opstest prior to deployment." %>
+  <%= f.input :run_post_checkout, :hint => "Run opstest after deployment." %>
+  <%= f.input :use_oos_for_deployments, :hint => "Take instance out of service before deployment.  Bring instance back in service after deployment." %>
+  <%= f.input :oos_percentage, :hint => "Percentage of instances to go out of service at one time.  Currently not supported.", collection: DeploymentPlan::OOS_PERCENT_OUT %>
+  <%= f.input :use_batch_group_for_oos, :hint => "Use batch_group column in servers.csv to determine batches of instances to go out of service at one time. <b>This creates multiple deployments when you trigger a batched deployment - use with caution</b>".html_safe %>
+  <%= f.association :oos_environments, :as => :check_boxes %>
+  <%= f.input :bleedoff_seconds, :hint => "Number of seconds to wait after taking instance out of service before proceeding with deployment" %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                deployment_plans_path, :class => 'btn' %>
+  </div>
+<% end %>

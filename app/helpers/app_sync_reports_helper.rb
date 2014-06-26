@@ -1,0 +1,2 @@
+module AppSyncReportsHelper
+end

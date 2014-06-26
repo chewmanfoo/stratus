@@ -1,0 +1,28 @@
+<li class=dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    Help
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li><%= link_to("http://twiki.dev.sabre.com/twiki/bin/view/Travelocity/UsingStratusEasy", :target => "_blank") do %>
+      <i class="icon-book"></i> Using Stratus
+      <% end %>
+    </li>
+    <li><%= link_to("http://twiki.dev.sabre.com/twiki/bin/view/Travelocity/UsingStratus", :target => "_blank") do %>
+      <i class="icon-book"></i> Using Stratus (advanced)
+      <% end %>
+    </li>
+    <li><%= link_to("http://twiki.dev.sabre.com/twiki/bin/view/Travelocity/SwitchAutomationFramework", :target => "_blank") do %>
+      <i class="icon-book"></i> SAF Documentation
+      <% end %>
+    </li>
+    <li><%= link_to("http://twiki.dev.sabre.com/twiki/bin/view/Travelocity/TVLDeveloperServices", :target => "_blank") do %>
+      <i class="icon_book"></i> Gen DevSvcs Docs
+      <% end %>
+    </li>
+    <li><%= link_to("http://twiki.dev.sabre.com/twiki/bin/view/Travelocity/DeveloperServicesInternal", :target => "_blank") do %>
+      <i class="icon_book"></i> Gen DevSvcs Int
+      <% end %>
+    </li>    
+  </ul>
+</li>

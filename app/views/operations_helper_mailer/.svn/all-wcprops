@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/operations_helper_mailer
+END
+deployment_needs_help.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/operations_helper_mailer/deployment_needs_help.html.erb
+END
+deployment_needs_help.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/operations_helper_mailer/deployment_needs_help.text.erb
+END

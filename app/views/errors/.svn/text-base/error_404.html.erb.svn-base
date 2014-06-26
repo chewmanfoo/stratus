@@ -1,0 +1,7 @@
+<div class="hero-unit">
+  <h1>404</h1>
+  <p>'<%= @not_found_path %>'?  What's a '<%= @not_found_path %>'?  Best check yourself before you wreck yourself.</p>
+  <p>
+    <%= image_tag "burning.gif" %>
+  </p>
+</div>

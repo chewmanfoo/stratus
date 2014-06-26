@@ -1,0 +1,15 @@
+#!/bin/bash
+MARKER="config.assets.version"
+FILENAME="config/application.rb"
+number=`cat $FILENAME|grep $MARKER|awk '{print $3}'|awk -F. '{print $3}'|sed "s/['\"]//"`
+nnum=`expr $number + 1`
+echo "current asset version is $number"
+echo "new asset version is $nnum"
+sed -i "s/config.assets.version = .*$/config.assets.version = \"1.0.$nnum\"/" $FILENAME
+bundle exec rake assets:precompile
+chown -R apache.apache public/
+chown -R apache.apache tmp/
+service httpd restart
+/etc/init.d/sidekiq stop
+sleep 10 
+/etc/init.d/sidekiq start

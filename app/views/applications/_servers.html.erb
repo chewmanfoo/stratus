@@ -1,0 +1,13 @@
+<div class="well">
+ <table class="table">
+   <tbody>
+    <% app.servers.each do |s| %>
+      <tr>
+        <td><%= server_icon_and_name(s, "tiny") %></td>
+        <td><%= server_software_info(s) %></td>
+        <td><%= server_operations_buttons(s) %></td>
+      </tr>
+    <% end %>
+   </tbody>
+ </table> 
+</div>

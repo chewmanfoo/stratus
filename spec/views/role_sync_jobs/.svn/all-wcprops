@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/views/role_sync_jobs
+END
+new.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/views/role_sync_jobs/new.html.erb_spec.rb
+END
+show.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/views/role_sync_jobs/show.html.erb_spec.rb
+END
+edit.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/views/role_sync_jobs/edit.html.erb_spec.rb
+END
+index.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/views/role_sync_jobs/index.html.erb_spec.rb
+END

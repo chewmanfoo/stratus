@@ -1,0 +1,42 @@
+<%- model_class = Deployment -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:package) %></th>
+      <th><%= model_class.human_attribute_name(:mail_recipient_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @deployments.each do |deployment| %>
+      <tr>
+        <td><%= link_to deployment.full_name, deployment %></td>
+        <td><%= link_to deployment.mail_recipient_name, deployment.mail_recipient %></td>
+        <td><%= deployment.created_at.to_s(:pretty) %></td>
+        <td>
+          <%= link_to t('.clone', :default => t("helpers.links.clone")),
+                      clone_deployment_path(:id => deployment.id), :class => 'btn btn-mini' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_deployment_path(deployment), :class => 'btn btn-mini' if deployment.editable? %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      deployment_path(deployment),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' if deployment.destroyable? %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate @deployments, :renderer => BootstrapPagination::Rails %>
+
+<% if creates_deployments? %>
+  <%= link_to t('.new', :default => t("helpers.links.new")),
+            new_deployment_path,
+            :class => 'btn btn-primary' %>
+<% end %>

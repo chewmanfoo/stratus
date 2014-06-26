@@ -1,0 +1,26 @@
+<%- model_class = CheckoutResult -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @checkout_result.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:last_run_at) %>:</strong></dt>
+  <dd class="clearfix"><%= @checkout_result.last_run_at %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:server_id) %>:</strong></dt>
+  <dd class="clearfix"><%= @checkout_result.server_id %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              checkout_results_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_checkout_result_path(@checkout_result), :class => 'btn' %>
+  <%= link_to("run!", start_checkout_result_path(:id => @checkout_result.id), :class => 'btn btn-mini btn-success', :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Start executes the checkout on the server.  Are you sure?')) }) %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              checkout_result_path(@checkout_result),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

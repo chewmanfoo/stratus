@@ -1,0 +1,31 @@
+<h1>Listing sync_jobs</h1>
+
+<table>
+  <tr>
+    <th>Exceptions</th>
+    <th>Started at</th>
+    <th>Started by</th>
+    <th>Completed at</th>
+    <th>Workflow state</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sync_jobs.each do |sync_job| %>
+  <tr>
+    <td><%= sync_job.exceptions %></td>
+    <td><%= sync_job.started_at %></td>
+    <td><%= sync_job.started_by %></td>
+    <td><%= sync_job.completed_at %></td>
+    <td><%= sync_job.workflow_state %></td>
+    <td><%= link_to 'Show', sync_job %></td>
+    <td><%= link_to 'Edit', edit_sync_job_path(sync_job) %></td>
+    <td><%= link_to 'Destroy', sync_job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sync job', new_sync_job_path %>

@@ -1,0 +1,21 @@
+<% unless deployment_plan.blank? %>
+<div class="well">
+ <table class="table">
+   <tbody>
+    <tr>
+      <td><%= deployment_plan.name %></td>
+      <td><%= link_to deployment_plan.mail_recipient_name, deployment_plan.mail_recipient %></td>
+    </tr>
+   </tbody>
+ </table> 
+</div>
+<% else %>
+  <div class="well">
+  No Deployment Plan.  You need a Deployment Plan to execute Deployments created with remote clients with the stratus API.
+
+
+  <div class="pull-right">
+    <%= link_to "Add a Deployment Plan", new_deployment_plan_path(:application_id => @application.id), :class => 'btn btn-mini btn-primary' %>
+  </div>
+  </div>
+<% end %> 

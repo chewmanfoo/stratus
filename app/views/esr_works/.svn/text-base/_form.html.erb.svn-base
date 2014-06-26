@@ -1,0 +1,8 @@
+<%= simple_form_for @esr_work, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                esr_works_path, :class => 'btn' %>
+  </div>
+<% end %>

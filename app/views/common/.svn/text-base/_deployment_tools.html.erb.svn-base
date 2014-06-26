@@ -1,0 +1,31 @@
+<p class="lead text-info"><em>Deploy!</em></p>  
+
+<% if creates_deployments? %>
+    <%= link_to new_deployment_url, :class => "btn btn-primary" do %>
+      <i class="icon-pencil"></i> Deploy
+    <% end %>
+    <br />
+    <%= link_to new_deployment_set_url, :class => "btn btn-primary" do %>
+      <i class="icon-pencil"></i> Deploy Set
+    <% end %>
+<% end %>
+
+<% if refreshes_tripcase? %>
+<hr />
+
+    <%= link_to new_refresh_url, :class => "btn btn-success" do %>
+      <i class="icon-pencil"></i> Refresh
+    <% end %>
+<% end %>
+
+<% if creates_switches? %>
+<hr />
+
+    <%= link_to new_switch_url, :class => "btn btn-warning" do %>
+      <i class="icon-pencil"></i> Switch
+    <% end %>
+    <br />
+    <%= link_to multinew_switches_url, :class => "btn btn-warning" do %>
+      <i class="icon-pencil"></i> Switches
+    <% end %>
+<% end %>

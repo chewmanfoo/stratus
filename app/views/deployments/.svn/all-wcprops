@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/deployments
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/10715/trunk/stratus/app/views/deployments/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/10710/trunk/stratus/app/views/deployments/index.html.erb
+END
+_rejection_reason.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/app/views/deployments/_rejection_reason.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tvly/build-tools/!svn/ver/10715/trunk/stratus/app/views/deployments/new.html.erb
+END
+show.xml.builder
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/12196/trunk/stratus/app/views/deployments/show.xml.builder
+END
+reject.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/10607/trunk/stratus/app/views/deployments/reject.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/deployments/show.html.erb
+END
+_deployments.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/10715/trunk/stratus/app/views/deployments/_deployments.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/12386/trunk/stratus/app/views/deployments/_form.html.erb
+END
+_reject_reason.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/10478/trunk/stratus/app/views/deployments/_reject_reason.html.erb
+END
+create.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/11683/trunk/stratus/app/views/deployments/create.html.erb
+END

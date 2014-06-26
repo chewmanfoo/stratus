@@ -1,0 +1,26 @@
+
+<div class="span4">
+<p class="lead text-info"><em>Stratus does deployments!</em></p>  
+
+<div class="accordion" id="accordion2">
+  <div class="accordion-group">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+        tell me more! 
+      </a>
+    <div id="collapseOne" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <p class="lead">If you need to deploy built packages to the Travelocity Cloud, click
+        <span class="label label-info">Request a New Deployment</span> below.  Please be careful to fill in the form accurately, and read the hints carefully.  Only you can prevent forest fires! 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if creates_deployments? %>
+  <div class="well well-small centered-container">
+    <%= link_to "Request a New Deployment", new_deployment_url, :class => "btn btn-large btn-primary" %>
+    <%= link_to "Request a New Deployment Set", new_deployment_set_url, :class => "btn btn-large btn-primary" %>
+  </div>
+<% end %>
+</div>

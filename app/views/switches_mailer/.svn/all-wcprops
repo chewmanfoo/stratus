@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer
+END
+switch_rejected.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_rejected.html.erb
+END
+switch_rejected.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_rejected.text.erb
+END
+switch_created.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_created.html.erb
+END
+switch_created.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_created.text.erb
+END
+switch_accepted.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_accepted.html.erb
+END
+switch_accepted.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_accepted.text.erb
+END
+switch_completed.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_completed.html.erb
+END
+switch_completed.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/app/views/switches_mailer/switch_completed.text.erb
+END

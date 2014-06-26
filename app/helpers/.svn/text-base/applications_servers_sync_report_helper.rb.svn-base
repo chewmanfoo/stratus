@@ -1,0 +1,2 @@
+module ApplicationsServersSyncReportHelper
+end

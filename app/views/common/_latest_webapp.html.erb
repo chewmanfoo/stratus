@@ -1,0 +1,18 @@
+<div>
+<% if @config.show_latest_webapp? %>
+  <h4>Latest Webapp</h4>
+  <% if @config.latest_webapp.blank? %>
+    <em>reloading...</em>
+  <% else %>
+    <div class="well">
+      <table class="table table-condensed">
+        <% @config.latest_webapp.split("\n").each do |l| %>
+        <tr><td><span class="label label-info"><%= l.split(":")[0] %></span><%= l.split(":")[1].gsub("tvl-webapp-","") %></td></tr>
+        <% end %>
+      </table>
+    </div>
+  <% end %>
+<% else %>
+  <a href="#" class="badge span3" style="margin-left:0px;" rel="popover" data-trigger="hover" data-html="true" data-content="Latest Webapp is turned off in the system configuration.  If you are an admin, you can <em>edit the system configuration</em> to turn it on." ><i class="icon-wrench"></i> Latest Webapp</a>
+<% end %>
+</div>

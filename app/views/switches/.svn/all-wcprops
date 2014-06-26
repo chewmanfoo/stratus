@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/switches
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tvly/build-tools/!svn/ver/10778/trunk/stratus/app/views/switches/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/app/views/switches/index.html.erb
+END
+_switches.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/app/views/switches/_switches.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/10479/trunk/stratus/app/views/switches/new.html.erb
+END
+_multiform.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/app/views/switches/_multiform.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/app/views/switches/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tvly/build-tools/!svn/ver/12229/trunk/stratus/app/views/switches/_form.html.erb
+END
+multinew.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/10530/trunk/stratus/app/views/switches/multinew.html.erb
+END

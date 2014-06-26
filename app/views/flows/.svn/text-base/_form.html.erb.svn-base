@@ -1,0 +1,15 @@
+<%= simple_form_for @flow, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name, :hint => "just name the flow" %>
+  <%= f.association :environment, :hint => "if needed, pick an environment to be used.  Can be refered to in a chore as <b><tt>\#\{\@chore.environment_name\}</tt></b>".html_safe %>
+  <%= f.association :role, :hint => "if needed, pick a role to be used.  Can be refered to in a chore as <b><tt>\#\{\@chore.role_name\}</tt></b>".html_safe %>
+  <%= f.association :application, :hint => "if needed, pick an application to be used.  Can be refered to in a chore as <b><tt>\#\{\@chore.application_name\}</tt></b>".html_safe %>
+  <%= f.input :build_number, :hint => "if needed, enter a build_number to be used.  Can be refered to in a chore as <b><tt>\#\{\@chore.build_number\}</tt></b>".html_safe %>
+  <%= f.input :latest, :hint => "indicate whether you'd like the latest build number to be used" %>
+  <%= f.input :reason, :hint => "give a reason for the change, if needed" %>
+  <%= f.association :first_flow_part, :hint => "select the first flow part to execute when this flow starts" %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                flows_path, :class => 'btn' %>
+  </div>
+<% end %>

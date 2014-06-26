@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/requests
+END
+deployments_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/deployments_spec.rb
+END
+jump_page_links_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/11706/trunk/stratus/spec/requests/jump_page_links_spec.rb
+END
+checkout_result_details_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/checkout_result_details_spec.rb
+END
+role_sync_jobs_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/requests/role_sync_jobs_spec.rb
+END
+deployment_requests_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/spec/requests/deployment_requests_spec.rb
+END
+application_sync_jobs_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/requests/application_sync_jobs_spec.rb
+END
+deployment_plans_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11768/trunk/stratus/spec/requests/deployment_plans_spec.rb
+END
+retries_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/spec/requests/retries_spec.rb
+END
+environment_sync_reports_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/environment_sync_reports_spec.rb
+END
+esr_works_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/esr_works_spec.rb
+END
+deployment_sets_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/spec/requests/deployment_sets_spec.rb
+END
+latest_releases_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/latest_releases_spec.rb
+END
+server_sync_jobs_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/requests/server_sync_jobs_spec.rb
+END
+flow_parts_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/requests/flow_parts_spec.rb
+END
+approved_builds_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/spec/requests/approved_builds_spec.rb
+END
+chores_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/requests/chores_spec.rb
+END
+checkout_results_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/checkout_results_spec.rb
+END
+refreshes_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/spec/requests/refreshes_spec.rb
+END
+sync_jobs_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/requests/sync_jobs_spec.rb
+END
+app_sync_reports_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/spec/requests/app_sync_reports_spec.rb
+END
+flows_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/requests/flows_spec.rb
+END
+auth_keys_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/requests/auth_keys_spec.rb
+END

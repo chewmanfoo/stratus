@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/tvly/build-tools/!svn/ver/10713/trunk/stratus/app/views/errors
+END
+error_500.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/10713/trunk/stratus/app/views/errors/error_500.html.erb
+END
+error_404.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/10713/trunk/stratus/app/views/errors/error_404.html.erb
+END

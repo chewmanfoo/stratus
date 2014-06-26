@@ -1,0 +1,8 @@
+A Switch has been rejected on Stratus
+=========================================================================
+<%= @user_desc %> has created a Switch request for 
+<%= @switch.full_name %> on Stratus at <%= @switch.rejected_at.to_s(:pretty) %>.  
+
+To read about this Switch, just follow this link: <%= @url %>.
+
+Thanks for using Stratus and have a great day!

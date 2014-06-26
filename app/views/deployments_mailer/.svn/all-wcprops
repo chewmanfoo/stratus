@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer
+END
+deployment_rejected.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_rejected.text.erb
+END
+deployment_started.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_started.html.erb
+END
+deployment_created.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_created.html.erb
+END
+deployment_accepted.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_accepted.html.erb
+END
+deployment_completed.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_completed.html.erb
+END
+deployment_terminated.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_terminated.text.erb
+END
+deployment_approved.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_approved.html.erb
+END
+deployment_needs_approval.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_needs_approval.text.erb
+END
+deployment_rejected.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_rejected.html.erb
+END
+deployment_started.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_started.text.erb
+END
+deployment_created.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_created.text.erb
+END
+deployment_accepted.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_accepted.text.erb
+END
+deployment_terminated.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_terminated.html.erb
+END
+deployment_completed.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_completed.text.erb
+END
+deployment_approved.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_approved.text.erb
+END
+deployment_needs_approval.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/12062/trunk/stratus/app/views/deployments_mailer/deployment_needs_approval.html.erb
+END

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>A Deployment is broken and in need of assistance</h1>
+    <p>
+      <%= @from.given_name %>, has reported a problem with a Deployment request for <%= @deployment.full_name %> on Stratus at <%= Time.now.to_s(:pretty) %>. 
+    </p>
+    <p>
+      To read about this Deployment, just follow this link: <%= link_to @deployment_show_url %>.
+    </p>
+    <p>Thanks for using Stratus and have a great day!</p>
+  </body>
+</html>

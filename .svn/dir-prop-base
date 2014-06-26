@@ -1,0 +1,21 @@
+K 9
+sv:ignore
+V 11
+log/
+log/*
+
+K 10
+svn:ignore
+V 68
+tmp
+stratus.pid
+stratus-lock
+ignore.txt
+Guardfile
+junk/conf/servers
+
+K 12
+svn:unignore
+V 3
+tmp
+END

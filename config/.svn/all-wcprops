@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/config
+END
+ldap.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/tvly/build-tools/!svn/ver/11165/trunk/stratus/config/ldap.yml
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/tvly/build-tools/!svn/ver/12712/trunk/stratus/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/tvly/build-tools/!svn/ver/11372/trunk/stratus/config/database.yml
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/tvly/build-tools/!svn/ver/12419/trunk/stratus/config/application.rb
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/boot.rb
+END
+cucumber.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/config/cucumber.yml
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/tvly/build-tools/!svn/ver/10529/trunk/stratus/config/environment.rb
+END

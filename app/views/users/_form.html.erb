@@ -1,0 +1,18 @@
+<%= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :username, :disabled => true, :hint => 'You cannot change your username.' %>
+  <%= f.input :given_name, :disabled => true, :hint => "You cannot change your given name. Talk to TVL AD Admins if it's not correct." %>
+  <%= f.input :email %>
+  <% if admin? %>
+    <%= f.association :groups, :as => :check_boxes %>
+  <% else %>
+    <%= f.association :groups, :as => :check_boxes, :disabled => true, :hint => "You're not an admin, so you cannot change your groups." %>
+  <% end %>
+  <%= f.input :svn_login, :hint => "this is your login and password to tcysvn02.dev.sabre.com" %>
+  <%= f.input :svn_password, input_html: { value: @user.svn_password } %>
+  <%= f.input :auth_key, :hint => "this can be any alpha-numeric passphrase. No punctuation, please" %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                root_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/factories
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/factories/application.rb
+END
+deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/factories/deployments.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/factories/environment.rb
+END
+roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/factories/roles.rb
+END

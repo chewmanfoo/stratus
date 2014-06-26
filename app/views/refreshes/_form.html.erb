@@ -1,0 +1,17 @@
+<%= simple_form_for @refresh, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.association :environment, :as => :collection_select, collection: Environment.tcs, :include_blank => false, :hint => "Choose the Environment where your instance lives." %>
+  <%= f.association :role, :as => :collection_select, collection: Role.tcs, :include_blank => false, :hint => "Choose the role to refresh." %>
+  <%= f.input :changelist, :hint => "OK to leave blank." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                refreshes_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<%= simple_form_for @chore, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name, :hint => "just name the chore" %>
+  <%= f.input :command, 
+              :input_html => {:style => 'width: 575px'},
+              :hint => "the command to be performed.  You can refer to <tt>environment_name, role_name, application_name</tt> etc. like this: <b><tt>\#\{\@chore.environment_name\}</tt></b>".html_safe %>
+  <%= f.input :success, 
+              :input_html => {:style => 'width: 575px'},
+              :hint => "in addition to checking exit code, check for these string(s) in the output.  (comma-delimited list)" %>
+  <%= f.input :fail, 
+              :input_html => {:style => 'width: 575px'},
+              :hint => "in addition to checking exit code, check for these string(s) in the output.  (comma-delimited list)" %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                chores_path, :class => 'btn' %>
+  </div>
+<% end %>

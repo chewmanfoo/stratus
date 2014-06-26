@@ -1,0 +1,31 @@
+<%= simple_form_for @system_configuration, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%#= f.input :in_effect, :hint => "Only one System Configuration can be in effect at any given time." %>
+  <%= f.input :debug_mode, :hint => "Causes Stratus to execute actions without affecting servers (noop)." %>
+  <%= f.input :send_emails, :hint => "Causes Stratus to skip sending all emails." %>
+  <%= f.input :verify_switches, :hint => "Causes Stratus Switch deployments to run check_deployment at the end." %>
+  <%= f.input :check_disc_space_deployments, :hint => "Causes Stratus Deployments to check the server's disc space before deploying." %> 
+  <%= f.input :disc_space_threshold, :hint => "% of root partition used considered dangerous." %>
+  <%= f.input :show_latest_releases, :hint => "Causes Stratus to show Latest Releases in the right side content pane." %>
+  <%= f.input :num_latest_releases, :hint => "the number of releases in the Latest Releases box on the main page" %>
+  <%= f.input :show_latest_webapp, :hint => "Causes Stratus to show Latest Webapp Releases in the right side content pane." %>
+  <%= f.input :allow_deployment_requests, :hint => "Allow requests from client's outside of the webui using stratus API" %>
+  <%= f.input :allow_auto_promotion, :hint => "Allow deployments to promote from environment to environment" %>
+  <%= f.input :deployments_future_schedulable, :hint => "Check if Deployments can be scheduled for a future time." %>
+  <%= f.input :deployment_kod, :hint => "Comma-delimited string of words that indicate a failed deployment." %> 
+  <%= f.input :check_reo_for_deployments_approval, :hint => "Check REO for approval for Deployments for environments which require approval." %>
+  <%= f.input :use_oos_for_deployments, :hint => "Use an OOS service for deploying to servers" %>
+  <%= f.input :switches_future_schedulable, :hint => "Check if Switches can be scheduled for a future time." %>
+  <%= f.input :use_timer_service, :hint => "Update TimerService as deployments progress." %>
+  <%= f.association :auto_approved_environments, :as => :check_boxes %>
+  <%= f.association :deployable_environments, :as => :check_boxes %>
+  <%= f.input :enable_puppet_refresh_cron, :hint => "switch the cron off or on." %>
+  <%= f.input :puppet_refresh_batchsize, :hint => "the number of servers to process simultaneously." %> 
+  <%= f.input :puppet_refresh_cron_timings, :hint => "the first five columns of the crontab entry." %>
+  <%= f.input :allow_delete_set, :hint => "comma-delimited list of controllers where deletes of members are allowed." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                system_configurations_path, :class => 'btn' %>
+  </div>
+<% end %>

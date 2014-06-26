@@ -1,0 +1,53 @@
+<% if setup_incomplete? %>
+  <%= render "common/complete_user_setup" %>
+<% end %>
+<div class="well">
+  <% if @deployments_landed_size > 6 %>
+    <div class="alert alert-block">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Inbox Full!</h4>
+      There are too many Deployments in the 'All Work' tab.  Be sure you click 'complete!' after your Deployment completes and you've reviewed it, to make the Deployment drop out of the inbox. 
+      <% if admin? %><b>Admin:</b> Click here to automagically complete/fail Deployments: <%= link_to "poof!", rollup_deployments_path, :class => 'btn btn-success' %><% end %>
+    </div>
+  <% end %>
+  <h1>Welcome to Stratus</h1>
+
+  <div class="accordion" id="accordion2" style="border: 0px;">
+    <div class="accordion-group" style="border: 0px;">
+<% if creates_deployments? %>
+      <div class="accordion-heading" style="border: 0px;">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" style="border: 0px;">
+          <h3>My Workload</h3>
+        </a>
+      </div>
+      <div id="collapseOne" class="accordion-body collapse in" style="border: 0px;">
+        <div class="accordion-inner" style="border: 0px;">
+          <%= render :partial => "common/workload", :locals => {:workload => @my_workload} %>
+        </div>
+      </div>
+      <div class="accordion-heading" style="border: 0px;">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" style="border: 0px;">
+          <h3>All Work</h3>
+        </a>
+      </div>
+      <div id="collapseTwo" class="accordion-body collapse" style="border: 0px;">
+        <div class="accordion-inner" style="border: 0px;">
+          <%= render :partial => "common/workload", :locals => {:workload => @workload} %>
+        </div>
+      </div>
+<% end %>
+<% if refreshes_tripcase? %>
+      <div class="accordion-heading" style="border: 0px;">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" style="border: 0px;">
+          <h3>Refreshes</h3>
+        </a>
+      </div>
+      <div id="collapseThree" class="accordion-body collapse" style="border: 0px;">
+        <div class="accordion-inner" style="border: 0px;">
+          <%= render :partial => "common/refreshes", :locals => {:refreshes => @refreshes} %>
+        </div>
+      </div>
+<% end %>
+    </div>
+  </div>
+</div>

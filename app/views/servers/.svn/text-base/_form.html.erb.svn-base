@@ -1,0 +1,16 @@
+<%= simple_form_for @server, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :inactive %>
+  <%= f.association :role %>
+  <%= f.input :runtime_env %>
+  <%= f.association :environment %>
+  <%= f.input :classes %>
+  <%= f.input :switches %>
+  <%= f.input :sub_runtime_env %>
+  <%= f.input :batch_group %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                servers_path, :class => 'btn' %>
+  </div>
+<% end %>

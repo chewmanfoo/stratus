@@ -1,0 +1,26 @@
+<div class="span4">
+<p class="lead text-info"><em>Stratus does switches!</em></p>
+
+<div class="accordion" id="accordion3">
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo">
+        tell me more...
+      </a>
+    </div>
+    <div id="collapseTwo" class="accordion-body collapse">
+      <div class="accordion-inner">
+        <p class="lead">If you need to deploy a switch, click <span class="label label-warning">Request a New Switch</span> below.  To deploy multiple switches, use <span class="label label-warning">Request New Switches</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if creates_switches? %>
+  <div class="well well-small centered-container">
+    <%= link_to "Request a New Switch", new_switch_url, :class => "btn btn-large btn-warning" %><br />
+    <%= link_to "Request New Switches", multinew_switches_url, :class => "btn btn-large btn-warning" %>
+  </div>
+<% end %>
+</div>

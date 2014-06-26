@@ -1,0 +1,27 @@
+<%- model_class = Environment -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd class="clearfix"><%= @environment.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:requires_reason) %>:</strong></dt>
+  <dd class="clearfix"><%= @environment.requires_reason %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:next_environment_name) %>:</strong></dt>
+  <dd class="clearfix"><%= @environment.next_environment_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:tcs_environment) %>:</strong></dt>
+  <dd class="clearfix"><%= @environment.tcs_environment %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              environments_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_environment_path(@environment), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              environment_path(@environment),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' if current_user_is_me? %>
+</div>

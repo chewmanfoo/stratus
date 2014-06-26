@@ -1,0 +1,1007 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/db/migrate
+END
+20130319195414_add_type_to_sync_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/db/migrate/20130319195414_add_type_to_sync_jobs.rb
+END
+20121127213936_create_applications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/10591/trunk/stratus/db/migrate/20121127213936_create_applications.rb
+END
+20121207171902_add_debug_mode_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/10661/trunk/stratus/db/migrate/20121207171902_add_debug_mode_to_system_configurations.rb
+END
+20130620201022_create_retries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/db/migrate/20130620201022_create_retries.rb
+END
+20121204165515_change_build_number_to_string_on_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121204165515_change_build_number_to_string_on_deployments.rb
+END
+20130415193409_add_deployment_set_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/11648/trunk/stratus/db/migrate/20130415193409_add_deployment_set_to_switches.rb
+END
+20121204223741_add_approved_and_approved_by_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121204223741_add_approved_and_approved_by_to_deployments.rb
+END
+20130308155240_add_version_to_esr_package_problems.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tvly/build-tools/!svn/ver/11372/trunk/stratus/db/migrate/20130308155240_add_version_to_esr_package_problems.rb
+END
+20130521203540_create_deployment_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/db/migrate/20130521203540_create_deployment_requests.rb
+END
+20121212203940_create_group_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tvly/build-tools/!svn/ver/10680/trunk/stratus/db/migrate/20121212203940_create_group_lists.rb
+END
+20130731165420_add_auth_token_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/12196/trunk/stratus/db/migrate/20130731165420_add_auth_token_to_users.rb
+END
+20130402154926_add_disc_space_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130402154926_add_disc_space_to_deployments.rb
+END
+20130806145240_add_deployment_request_id_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/12210/trunk/stratus/db/migrate/20130806145240_add_deployment_request_id_to_deployments.rb
+END
+20130405152334_add_mail_recipient_id_to_deployment_sets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130405152334_add_mail_recipient_id_to_deployment_sets.rb
+END
+20130405151206_create_deployment_set_role_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130405151206_create_deployment_set_role_lists.rb
+END
+20121220190304_add_username_to_admin_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/10719/trunk/stratus/db/migrate/20121220190304_add_username_to_admin_users.rb
+END
+20121205154658_remove_approved_from_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121205154658_remove_approved_from_deployments.rb
+END
+20121206170520_create_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121206170520_create_system_configurations.rb
+END
+20130103201914_add_deployment_terminated_fields_for_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20130103201914_add_deployment_terminated_fields_for_deployments.rb
+END
+20130213234355_add_rollback_build_number_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/11148/trunk/stratus/db/migrate/20130213234355_add_rollback_build_number_to_deployments.rb
+END
+20130516153907_add_check_reo_for_deployments_approval_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/tvly/build-tools/!svn/ver/11806/trunk/stratus/db/migrate/20130516153907_add_check_reo_for_deployments_approval_to_system_configurations.rb
+END
+20131015163130_add_requires_reason_to_environments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tvly/build-tools/!svn/ver/12386/trunk/stratus/db/migrate/20131015163130_add_requires_reason_to_environments.rb
+END
+20130107160657_add_supercedes_build_number_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/10778/trunk/stratus/db/migrate/20130107160657_add_supercedes_build_number_to_switches.rb
+END
+20130605200550_add_checkout_binaries_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tvly/build-tools/!svn/ver/11917/trunk/stratus/db/migrate/20130605200550_add_checkout_binaries_to_deployment_plans.rb
+END
+20121207171647_remove_debug_mode_from_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10661/trunk/stratus/db/migrate/20121207171647_remove_debug_mode_from_deployments.rb
+END
+20130212191500_add_created_by_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/11075/trunk/stratus/db/migrate/20130212191500_add_created_by_to_deployments.rb
+END
+20130624201705_add_default_after_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/db/migrate/20130624201705_add_default_after_to_switches.rb
+END
+20130409154338_add_deployment_set_id_to_deployment_sets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/11620/trunk/stratus/db/migrate/20130409154338_add_deployment_set_id_to_deployment_sets.rb
+END
+20121206163131_add_started_by_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121206163131_add_started_by_to_deployments.rb
+END
+20121207171506_add_debug_mode_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10661/trunk/stratus/db/migrate/20121207171506_add_debug_mode_to_deployments.rb
+END
+20130914153450_create_oos_environment_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/tvly/build-tools/!svn/ver/12344/trunk/stratus/db/migrate/20130914153450_create_oos_environment_lists.rb
+END
+20130516215015_set_auto_accept_auto_approve_to_default_true.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tvly/build-tools/!svn/ver/11809/trunk/stratus/db/migrate/20130516215015_set_auto_accept_auto_approve_to_default_true.rb
+END
+20121114220924_add_accepted_by_to_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114220924_add_accepted_by_to_reload_requests.rb
+END
+20130612182406_add_auto_promote_stop_environment_id_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/db/migrate/20130612182406_add_auto_promote_stop_environment_id_to_deployment_plans.rb
+END
+20121114225532_add_completed_by_to_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114225532_add_completed_by_to_reload_requests.rb
+END
+20130912162445_add_use_oos_for_deployments_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tvly/build-tools/!svn/ver/12327/trunk/stratus/db/migrate/20130912162445_add_use_oos_for_deployments_to_system_configurations.rb
+END
+20130821215901_add_puppet_refresh__cron_items_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/tvly/build-tools/!svn/ver/12298/trunk/stratus/db/migrate/20130821215901_add_puppet_refresh__cron_items_to_system_configurations.rb
+END
+20130205160756_create_latest_releases.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130205160756_create_latest_releases.rb
+END
+20130924182608_add_bleedoff_seconds_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/12351/trunk/stratus/db/migrate/20130924182608_add_bleedoff_seconds_to_deployment_plans.rb
+END
+20130102172540_add_deploy_to_first_server_only_boolean_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20130102172540_add_deploy_to_first_server_only_boolean_to_switches.rb
+END
+20121120210909_create_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/10479/trunk/stratus/db/migrate/20121120210909_create_switches.rb
+END
+20130402143753_add_show_latest_releases_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130402143753_add_show_latest_releases_to_system_configurations.rb
+END
+20130328153756_drop_server_sync_jobs_etc.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130328153756_drop_server_sync_jobs_etc.rb
+END
+20130313154444_change_version_on_esr_package_problems.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/11372/trunk/stratus/db/migrate/20130313154444_change_version_on_esr_package_problems.rb
+END
+20130914145440_add_use_oos_for_deployments_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tvly/build-tools/!svn/ver/12344/trunk/stratus/db/migrate/20130914145440_add_use_oos_for_deployments_to_deployment_plans.rb
+END
+20130521203629_add_workflow_state_to_deployment_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/db/migrate/20130521203629_add_workflow_state_to_deployment_requests.rb
+END
+20121116180311_add_index_to_environments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121116180311_add_index_to_environments.rb
+END
+20121217212404_add_creates_deployment_etc_to_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/10710/trunk/stratus/db/migrate/20121217212404_add_creates_deployment_etc_to_groups.rb
+END
+20130321190854_add_created_by_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/db/migrate/20130321190854_add_created_by_to_switches.rb
+END
+20140327155445_add_completed_at_to_refreshes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140327155445_add_completed_at_to_refreshes.rb
+END
+20121210210600_add_username_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/10673/trunk/stratus/db/migrate/20121210210600_add_username_to_users.rb
+END
+20121114191331_add_next_environment_id_to_environments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114191331_add_next_environment_id_to_environments.rb
+END
+20130227175051_create_esr_package_problems.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/11331/trunk/stratus/db/migrate/20130227175051_create_esr_package_problems.rb
+END
+20131028144724_add_default_after_default_true_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tvly/build-tools/!svn/ver/12419/trunk/stratus/db/migrate/20131028144724_add_default_after_default_true_to_switches.rb
+END
+20140326163404_add_tcs_environment_to_environments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140326163404_add_tcs_environment_to_environments.rb
+END
+20130521211356_add_auth_key_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/db/migrate/20130521211356_add_auth_key_to_users.rb
+END
+20140223173401_create_chores.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/db/migrate/20140223173401_create_chores.rb
+END
+20121220194735_create_icons.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tvly/build-tools/!svn/ver/10719/trunk/stratus/db/migrate/20121220194735_create_icons.rb
+END
+20121220200034_add_name_to_icons.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/10719/trunk/stratus/db/migrate/20121220200034_add_name_to_icons.rb
+END
+20130516144130_add_auto_promote_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tvly/build-tools/!svn/ver/11806/trunk/stratus/db/migrate/20130516144130_add_auto_promote_to_deployments.rb
+END
+20121129220921_add_workflow_state_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/db/migrate/20121129220921_add_workflow_state_to_deployments.rb
+END
+20131015161647_create_batch_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/12386/trunk/stratus/db/migrate/20131015161647_create_batch_groups.rb
+END
+20130131221914_change_supercedes_build_number_to_integer_in_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/tvly/build-tools/!svn/ver/10816/trunk/stratus/db/migrate/20130131221914_change_supercedes_build_number_to_integer_in_switches.rb
+END
+20130702192057_add_allow_auto_promotion_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/tvly/build-tools/!svn/ver/12047/trunk/stratus/db/migrate/20130702192057_add_allow_auto_promotion_to_system_configurations.rb
+END
+20121210180313_devise_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/10673/trunk/stratus/db/migrate/20121210180313_devise_create_users.rb
+END
+20140123212718_add_check_reo_for_approval_to_applications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tvly/build-tools/!svn/ver/12613/trunk/stratus/db/migrate/20140123212718_add_check_reo_for_approval_to_applications.rb
+END
+20130328151828_add_environment_id_to_sync_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130328151828_add_environment_id_to_sync_jobs.rb
+END
+20130314144309_add_fields_to_environment_sync_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/11405/trunk/stratus/db/migrate/20130314144309_add_fields_to_environment_sync_reports.rb
+END
+20130307154017_add_in_retry_to_environment_sync_report.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/11372/trunk/stratus/db/migrate/20130307154017_add_in_retry_to_environment_sync_report.rb
+END
+20130430205150_create_jump_page_links.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/11706/trunk/stratus/db/migrate/20130430205150_create_jump_page_links.rb
+END
+20130328160922_add_in_retry_to_sync_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130328160922_add_in_retry_to_sync_jobs.rb
+END
+20130319191723_create_sync_jobs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/db/migrate/20130319191723_create_sync_jobs.rb
+END
+20130926210358_add_batch_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tvly/build-tools/!svn/ver/12364/trunk/stratus/db/migrate/20130926210358_add_batch_to_deployments.rb
+END
+20121128165836_create_run_logs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/10591/trunk/stratus/db/migrate/20121128165836_create_run_logs.rb
+END
+20121127170240_change_body_on_suggestions_to_text.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/db/migrate/20121127170240_change_body_on_suggestions_to_text.rb
+END
+20130409161109_add_auto_accept_auto_start_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tvly/build-tools/!svn/ver/11620/trunk/stratus/db/migrate/20130409161109_add_auto_accept_auto_start_to_deployments.rb
+END
+20121128170146_add_agent_id_to_run_logs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tvly/build-tools/!svn/ver/10591/trunk/stratus/db/migrate/20121128170146_add_agent_id_to_run_logs.rb
+END
+20130416184057_add_skip_diskspace_check_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/11668/trunk/stratus/db/migrate/20130416184057_add_skip_diskspace_check_to_deployments.rb
+END
+20121203221125_add_application_id_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tvly/build-tools/!svn/ver/10624/trunk/stratus/db/migrate/20121203221125_add_application_id_to_deployments.rb
+END
+20130201180530_add_can_create_reports_to_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130201180530_add_can_create_reports_to_groups.rb
+END
+20130606020853_add_allow_deployment_requests_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/tvly/build-tools/!svn/ver/11917/trunk/stratus/db/migrate/20130606020853_add_allow_deployment_requests_to_system_configurations.rb
+END
+20121129220955_add_workflow_state_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10595/trunk/stratus/db/migrate/20121129220955_add_workflow_state_to_switches.rb
+END
+20140401184456_add_terminated_at_to_refreshes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/12724/trunk/stratus/db/migrate/20140401184456_add_terminated_at_to_refreshes.rb
+END
+20130923193500_add_oos_percentage_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/12346/trunk/stratus/db/migrate/20130923193500_add_oos_percentage_to_deployment_plans.rb
+END
+20130509164219_create_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/11768/trunk/stratus/db/migrate/20130509164219_create_deployment_plans.rb
+END
+20121211204846_add_svn_login_password_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tvly/build-tools/!svn/ver/10679/trunk/stratus/db/migrate/20121211204846_add_svn_login_password_to_users.rb
+END
+20130925145603_add_use_batch_group_for_oos_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tvly/build-tools/!svn/ver/12364/trunk/stratus/db/migrate/20130925145603_add_use_batch_group_for_oos_to_deployment_plans.rb
+END
+20130424144719_add_latest_webapp_at_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tvly/build-tools/!svn/ver/11683/trunk/stratus/db/migrate/20130424144719_add_latest_webapp_at_to_system_configurations.rb
+END
+20130130171612_add_inactive_to_servers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130130171612_add_inactive_to_servers.rb
+END
+20130123214427_create_appropriate_roles_applications.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130123214427_create_appropriate_roles_applications.rb
+END
+20130103224507_add_supercedes_name_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20130103224507_add_supercedes_name_to_switches.rb
+END
+20130110192135_add_terminated_boolean_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/tvly/build-tools/!svn/ver/10778/trunk/stratus/db/migrate/20130110192135_add_terminated_boolean_to_deployments.rb
+END
+20121120160741_create_mail_recipients.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/db/migrate/20121120160741_create_mail_recipients.rb
+END
+20140326161847_create_refreshes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140326161847_create_refreshes.rb
+END
+20130326222513_add_salt_to_auth_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/db/migrate/20130326222513_add_salt_to_auth_keys.rb
+END
+20130924180450_add_agent_id_index_to_run_logs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/12350/trunk/stratus/db/migrate/20130924180450_add_agent_id_index_to_run_logs.rb
+END
+20130315144917_add_pre_and_post_checkouts_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/tvly/build-tools/!svn/ver/11427/trunk/stratus/db/migrate/20130315144917_add_pre_and_post_checkouts_to_deployments.rb
+END
+20130425160214_create_deployment_timings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tvly/build-tools/!svn/ver/11697/trunk/stratus/db/migrate/20130425160214_create_deployment_timings.rb
+END
+20121120164812_add_mail_recipient_id_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/db/migrate/20121120164812_add_mail_recipient_id_to_deployments.rb
+END
+20121206163058_add_started_at_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121206163058_add_started_at_to_deployments.rb
+END
+20140326163345_add_tcs_role_to_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140326163345_add_tcs_role_to_roles.rb
+END
+20130517160012_create_approved_builds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/db/migrate/20130517160012_create_approved_builds.rb
+END
+20130401162434_add_verify_switches_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130401162434_add_verify_switches_to_system_configurations.rb
+END
+20131015160612_add_new_fields_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/12386/trunk/stratus/db/migrate/20131015160612_add_new_fields_to_deployments.rb
+END
+20121127165819_create_suggestions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/db/migrate/20121127165819_create_suggestions.rb
+END
+20121211224654_add_send_emails_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/tvly/build-tools/!svn/ver/10679/trunk/stratus/db/migrate/20121211224654_add_send_emails_to_system_configurations.rb
+END
+20121116231300_create_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/tvly/build-tools/!svn/ver/10445/trunk/stratus/db/migrate/20121116231300_create_deployments.rb
+END
+20130405151055_create_deployment_set_environment_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130405151055_create_deployment_set_environment_lists.rb
+END
+20121212230437_drop_package_from_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10680/trunk/stratus/db/migrate/20121212230437_drop_package_from_deployments.rb
+END
+20140226183541_create_flows.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/db/migrate/20140226183541_create_flows.rb
+END
+20130620201213_add_reason_to_retries.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/db/migrate/20130620201213_add_reason_to_retries.rb
+END
+20130205160509_add_num_latest_releases_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130205160509_add_num_latest_releases_to_system_configurations.rb
+END
+20140326160312_add_refreshes_tripcase_to_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140326160312_add_refreshes_tripcase_to_groups.rb
+END
+20130315143348_add_checkout_booleans_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/11427/trunk/stratus/db/migrate/20130315143348_add_checkout_booleans_to_deployments.rb
+END
+20130521210750_change_delay_to_timing_delay_in_deployments_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/db/migrate/20130521210750_change_delay_to_timing_delay_in_deployments_requests.rb
+END
+20121220154937_add_in_retry_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/tvly/build-tools/!svn/ver/10719/trunk/stratus/db/migrate/20121220154937_add_in_retry_to_deployments.rb
+END
+20121120230211_add_changelist_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10479/trunk/stratus/db/migrate/20121120230211_add_changelist_to_deployments.rb
+END
+20130227170007_create_environment_sync_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/tvly/build-tools/!svn/ver/11331/trunk/stratus/db/migrate/20130227170007_create_environment_sync_reports.rb
+END
+20130729144251_add_stop_auto_promote_environment_id_to_deployment_plans.rb
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/tvly/build-tools/!svn/ver/12178/trunk/stratus/db/migrate/20130729144251_add_stop_auto_promote_environment_id_to_deployment_plans.rb
+END
+20140401185859_add_terminated_bool_to_refreshes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/12724/trunk/stratus/db/migrate/20140401185859_add_terminated_bool_to_refreshes.rb
+END
+20121114174314_create_roles.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114174314_create_roles.rb
+END
+20121120161311_drop_email_notification_list_from_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/db/migrate/20121120161311_drop_email_notification_list_from_deployments.rb
+END
+20130204210852_add_trigger_refresh_checkbox_to_app_sync_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130204210852_add_trigger_refresh_checkbox_to_app_sync_reports.rb
+END
+20130320151621_create_auth_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/db/migrate/20130320151621_create_auth_keys.rb
+END
+20121120153403_add_rejectection_reason_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/10474/trunk/stratus/db/migrate/20121120153403_add_rejectection_reason_to_deployments.rb
+END
+20130102172417_add_in_retry_boolean_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20130102172417_add_in_retry_boolean_to_switches.rb
+END
+20140403194539_add_allow_delete_set_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tvly/build-tools/!svn/ver/12744/trunk/stratus/db/migrate/20140403194539_add_allow_delete_set_to_system_configurations.rb
+END
+20130926160038_add_application_to_deployment_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/12364/trunk/stratus/db/migrate/20130926160038_add_application_to_deployment_requests.rb
+END
+20140327165018_add_in_retry_to_refreshes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/db/migrate/20140327165018_add_in_retry_to_refreshes.rb
+END
+20130402162516_add_threshold_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130402162516_add_threshold_to_system_configurations.rb
+END
+20130204194619_create_app_sync_reports.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130204194619_create_app_sync_reports.rb
+END
+20121114174156_create_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114174156_create_reload_requests.rb
+END
+20121204224202_add_approved_at_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/db/migrate/20121204224202_add_approved_at_to_deployments.rb
+END
+20121116180339_add_indexs_to_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121116180339_add_indexs_to_reload_requests.rb
+END
+20130423155557_add_latest_webapp_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tvly/build-tools/!svn/ver/11683/trunk/stratus/db/migrate/20130423155557_add_latest_webapp_to_system_configurations.rb
+END
+20121212210652_create_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tvly/build-tools/!svn/ver/10680/trunk/stratus/db/migrate/20121212210652_create_groups.rb
+END
+20121114232139_add_accepted_completed_rejected_to_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114232139_add_accepted_completed_rejected_to_reload_requests.rb
+END
+20140223181542_create_flow_parts.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/db/migrate/20140223181542_create_flow_parts.rb
+END
+20121212232747_add_manages_booleans_to_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10680/trunk/stratus/db/migrate/20121212232747_add_manages_booleans_to_groups.rb
+END
+20130118201055_create_auto_approval_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130118201055_create_auto_approval_lists.rb
+END
+20130529204036_add_deployment_kod_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/tvly/build-tools/!svn/ver/11889/trunk/stratus/db/migrate/20130529204036_add_deployment_kod_to_system_configurations.rb
+END
+20130110192341_add_terminated_boolean_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10778/trunk/stratus/db/migrate/20130110192341_add_terminated_boolean_to_switches.rb
+END
+20130702145906_add_use_timer_service_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/tvly/build-tools/!svn/ver/12047/trunk/stratus/db/migrate/20130702145906_add_use_timer_service_to_system_configurations.rb
+END
+20130118163117_create_checkout_results.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130118163117_create_checkout_results.rb
+END
+20130227173439_create_esr_works.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11331/trunk/stratus/db/migrate/20130227173439_create_esr_works.rb
+END
+20121228162821_change_by_to_foreign_keys_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20121228162821_change_by_to_foreign_keys_to_users.rb
+END
+20130423145210_add_show_latest_webapp_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/tvly/build-tools/!svn/ver/11683/trunk/stratus/db/migrate/20130423145210_add_show_latest_webapp_to_system_configurations.rb
+END
+20140109230115_add_devsvcs_help_email_sent_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/tvly/build-tools/!svn/ver/12579/trunk/stratus/db/migrate/20140109230115_add_devsvcs_help_email_sent_to_deployments.rb
+END
+20130405145958_create_deployment_sets.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130405145958_create_deployment_sets.rb
+END
+20121220200316_change_icon_to_icon_id_in_useful_links.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/10719/trunk/stratus/db/migrate/20121220200316_change_icon_to_icon_id_in_useful_links.rb
+END
+20121218160305_create_useful_links.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/10713/trunk/stratus/db/migrate/20121218160305_create_useful_links.rb
+END
+20130205213225_add_version_to_latest_releases.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130205213225_add_version_to_latest_releases.rb
+END
+20130118163250_create_checkout_result_details.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130118163250_create_checkout_result_details.rb
+END
+20121228162715_add_started_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10727/trunk/stratus/db/migrate/20121228162715_add_started_to_switches.rb
+END
+20130205161134_add_package_to_latest_releases.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/db/migrate/20130205161134_add_package_to_latest_releases.rb
+END
+20130924155730_add_deployment_id_index_to_deployment_timings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/tvly/build-tools/!svn/ver/12348/trunk/stratus/db/migrate/20130924155730_add_deployment_id_index_to_deployment_timings.rb
+END
+20130402163034_add_check_disc_space_deployments_to_system_configurations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130402163034_add_check_disc_space_deployments_to_system_configurations.rb
+END
+20130509203721_add_default_mail_recipient_id_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/11768/trunk/stratus/db/migrate/20130509203721_add_default_mail_recipient_id_to_users.rb
+END
+20121211205041_change_deployments_by_fields_to_users_foreign_keys.rb
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/tvly/build-tools/!svn/ver/10679/trunk/stratus/db/migrate/20121211205041_change_deployments_by_fields_to_users_foreign_keys.rb
+END
+20121114174301_create_environments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114174301_create_environments.rb
+END
+20130405190054_add_deployment_set_id_to_deployments.rb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/db/migrate/20130405190054_add_deployment_set_id_to_deployments.rb
+END
+20121211172639_add_given_name_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10678/trunk/stratus/db/migrate/20121211172639_add_given_name_to_users.rb
+END
+20130118170741_add_approves_to_groups.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/db/migrate/20130118170741_add_approves_to_groups.rb
+END
+20121120231046_add_mail_recipient_id_to_switches.rb
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/tvly/build-tools/!svn/ver/10479/trunk/stratus/db/migrate/20121120231046_add_mail_recipient_id_to_switches.rb
+END
+20121127222604_create_servers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/10591/trunk/stratus/db/migrate/20121127222604_create_servers.rb
+END
+20130306175425_create_deployable_environment_lists.rb
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/tvly/build-tools/!svn/ver/11422/trunk/stratus/db/migrate/20130306175425_create_deployable_environment_lists.rb
+END
+20121114234707_add_rejected_by_to_reload_requests.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/db/migrate/20121114234707_add_rejected_by_to_reload_requests.rb
+END

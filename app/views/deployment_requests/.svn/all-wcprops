@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/12210/trunk/stratus/app/views/deployment_requests
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/app/views/deployment_requests/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/app/views/deployment_requests/index.html.erb
+END
+show_deployment_reference.xml.builder
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/tvly/build-tools/!svn/ver/12210/trunk/stratus/app/views/deployment_requests/show_deployment_reference.xml.builder
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/app/views/deployment_requests/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/11888/trunk/stratus/app/views/deployment_requests/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/app/views/deployment_requests/_form.html.erb
+END

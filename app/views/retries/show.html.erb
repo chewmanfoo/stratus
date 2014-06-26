@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Workflow state:</b>
+  <%= @retry.workflow_state %>
+</p>
+
+<p>
+  <b>Deployment:</b>
+  <%= @retry.deployment %>
+</p>
+
+
+<%= link_to 'Edit', edit_retry_path(@retry) %> |
+<%= link_to 'Back', retries_path %>

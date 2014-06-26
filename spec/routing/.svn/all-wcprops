@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/routing
+END
+auth_keys_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/routing/auth_keys_routing_spec.rb
+END
+jump_page_links_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/11706/trunk/stratus/spec/routing/jump_page_links_routing_spec.rb
+END
+checkout_result_details_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/routing/checkout_result_details_routing_spec.rb
+END
+role_sync_jobs_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/routing/role_sync_jobs_routing_spec.rb
+END
+deployment_requests_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/tvly/build-tools/!svn/ver/11818/trunk/stratus/spec/routing/deployment_requests_routing_spec.rb
+END
+application_sync_jobs_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/routing/application_sync_jobs_routing_spec.rb
+END
+deployment_plans_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11768/trunk/stratus/spec/routing/deployment_plans_routing_spec.rb
+END
+retries_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/12003/trunk/stratus/spec/routing/retries_routing_spec.rb
+END
+deployment_sets_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/spec/routing/deployment_sets_routing_spec.rb
+END
+esr_works_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11331/trunk/stratus/spec/routing/esr_works_routing_spec.rb
+END
+environment_sync_reports_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/tvly/build-tools/!svn/ver/11331/trunk/stratus/spec/routing/environment_sync_reports_routing_spec.rb
+END
+server_sync_jobs_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/routing/server_sync_jobs_routing_spec.rb
+END
+latest_releases_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/spec/routing/latest_releases_routing_spec.rb
+END
+flow_parts_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/routing/flow_parts_routing_spec.rb
+END
+approved_builds_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/spec/routing/approved_builds_routing_spec.rb
+END
+chores_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/routing/chores_routing_spec.rb
+END
+checkout_results_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/10815/trunk/stratus/spec/routing/checkout_results_routing_spec.rb
+END
+refreshes_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/spec/routing/refreshes_routing_spec.rb
+END
+sync_jobs_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11533/trunk/stratus/spec/routing/sync_jobs_routing_spec.rb
+END
+app_sync_reports_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/spec/routing/app_sync_reports_routing_spec.rb
+END
+flows_routing_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/routing/flows_routing_spec.rb
+END

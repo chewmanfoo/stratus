@@ -1,0 +1,7 @@
+<%- headers = ["p_certname","system_role","runtime_env","p_environment","p_classes","tvl_switches","sub_runtime_env","batch_group"] -%>
+<%= CSV.generate_line headers %>
+<%- @servers.each do |s| -%>
+<%- row = [ s.name,
+            s.role_name,s.runtime_env,s.environment_name,s.classes,s.switches,s.sub_runtime_env,s.batch_group] -%>
+<%= CSV.generate_line row, {:row_sep => nil} %>
+<%- end -%>

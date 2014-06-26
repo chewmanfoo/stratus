@@ -1,0 +1,10 @@
+<%= simple_form_for @environment_sync_report, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.association :trusted_environment %>
+  <%= f.association :target_environment %>
+  <%= f.association :work_to_perform %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                environment_sync_reports_path, :class => 'btn' %>
+  </div>
+<% end %>

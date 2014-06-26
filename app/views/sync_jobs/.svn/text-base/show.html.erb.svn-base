@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Exceptions:</b>
+  <%= @sync_job.exceptions %>
+</p>
+
+<p>
+  <b>Started at:</b>
+  <%= @sync_job.started_at %>
+</p>
+
+<p>
+  <b>Started by:</b>
+  <%= @sync_job.started_by %>
+</p>
+
+<p>
+  <b>Completed at:</b>
+  <%= @sync_job.completed_at %>
+</p>
+
+<p>
+  <b>Workflow state:</b>
+  <%= @sync_job.workflow_state %>
+</p>
+
+
+<%= link_to 'Edit', edit_sync_job_path(@sync_job) %> |
+<%= link_to 'Back', sync_jobs_path %>

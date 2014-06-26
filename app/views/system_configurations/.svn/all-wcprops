@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/12327/trunk/stratus/app/views/system_configurations
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/app/views/system_configurations/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/11607/trunk/stratus/app/views/system_configurations/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/tvly/build-tools/!svn/ver/10660/trunk/stratus/app/views/system_configurations/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/tvly/build-tools/!svn/ver/12744/trunk/stratus/app/views/system_configurations/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/12744/trunk/stratus/app/views/system_configurations/_form.html.erb
+END

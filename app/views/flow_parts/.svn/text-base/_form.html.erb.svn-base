@@ -1,0 +1,10 @@
+<%= simple_form_for @flow_part, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name, :hint => "just name the part" %>
+  <%= f.association :chore, :hint => "pick the chore to perform" %>
+  <%= f.association :next_flow_part, :hint => "pick the next part in the flow.  Leave blank to signal the end of the flow." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                flow_parts_path, :class => 'btn' %>
+  </div>
+<% end %>

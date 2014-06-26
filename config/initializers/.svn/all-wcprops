@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/tvly/build-tools/!svn/ver/12424/trunk/stratus/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/inflections.rb
+END
+client_side_validations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/client_side_validations.rb
+END
+devise.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/10678/trunk/stratus/config/initializers/devise.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/session_store.rb
+END
+disable_activerecord_logging.rb
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/tvly/build-tools/!svn/ver/12424/trunk/stratus/config/initializers/disable_activerecord_logging.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/secret_token.rb
+END
+stratus.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tvly/build-tools/!svn/ver/12364/trunk/stratus/config/initializers/stratus.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/backtrace_silencers.rb
+END
+sidekiq.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tvly/build-tools/!svn/ver/11620/trunk/stratus/config/initializers/sidekiq.rb
+END
+time_formats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/tvly/build-tools/!svn/ver/11917/trunk/stratus/config/initializers/time_formats.rb
+END
+kaminari.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/tvly/build-tools/!svn/ver/10530/trunk/stratus/config/initializers/kaminari.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/mime_types.rb
+END
+simple_form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/simple_form.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/config/initializers/wrap_parameters.rb
+END

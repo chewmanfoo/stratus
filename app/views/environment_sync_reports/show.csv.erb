@@ -1,0 +1,8 @@
+<%- headers = ["Package","Version in #{@environment_sync_report.trusted_environment_name}", "Version in #{@environment_sync_report.target_environment_name}", "Conflict"] -%>
+
+<%= CSV.generate_line headers %>
+
+<% @environment_sync_report.esr_package_problems.sort_by(&:conflict).each do |p| %>
+<%- row = [p.package_name, p.trusted_version, p.target_version, p.conflict.gsub('trusted',@environment_sync_report.trusted_environment_name).gsub('target',@environment_sync_report.target_environment_name)] -%>
+<%= CSV.generate_line row, {:row_sep => nil} %>
+<%- end -%>

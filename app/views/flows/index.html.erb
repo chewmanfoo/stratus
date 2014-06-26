@@ -1,0 +1,46 @@
+<%- model_class = Flow -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:environment_id) %></th>
+      <th><%= model_class.human_attribute_name(:role_id) %></th>
+      <th><%= model_class.human_attribute_name(:application_id) %></th>
+      <th><%= model_class.human_attribute_name(:build_number) %></th>
+      <th><%= model_class.human_attribute_name(:latest) %></th>
+      <th><%= model_class.human_attribute_name(:reason) %></th>
+      <th><%= model_class.human_attribute_name(:first_flow_part_id) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @flows.each do |flow| %>
+      <tr>
+        <td><%= link_to flow.name, flow_path(flow) %><br /><sup><%=l flow.created_at %></sup></td>
+        <td><%= flow.environment_id %></td>
+        <td><%= flow.role_id %></td>
+        <td><%= flow.application_id %></td>
+        <td><%= flow.build_number %></td>
+        <td><%= flow.latest %></td>
+        <td><%= flow.reason %></td>
+        <td><%= link_to flow.first_flow_part_name, flow_part_path(flow.first_flow_part_id) if flow.first_flow_part %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_flow_path(flow), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      flow_path(flow),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_flow_path,
+            :class => 'btn btn-primary' %>

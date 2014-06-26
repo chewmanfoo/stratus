@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Log:</b>
+  <%= @run_log.log %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @run_log.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_run_log_path(@run_log) %> |
+<%= link_to 'Back', run_logs_path %>

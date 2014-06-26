@@ -1,0 +1,14 @@
+<%= simple_form_for @jump_page_link, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :url %>
+  <% if params[:application_id] %>
+    <%= f.association :application, :selected => params[:application_id] %>
+  <% else %>
+    <%= f.association :application %>
+  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                jump_page_links_path, :class => 'btn' %>
+  </div>
+<% end %>

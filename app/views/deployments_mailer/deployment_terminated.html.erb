@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>A Deployment has been terminated on Stratus</h1>
+    <p>
+      <%= @user.given_name %>, <%= @user_desc %> has terminated a Deployment request for <%= @deployment.full_name %> on Stratus at <%= @deployment.terminated_at.to_s(:pretty) %>.  The responsible parties are aware of the Deployment termination, and will respond as soon as possible.  
+    </p>
+    <p>
+      To read about this Deployment, just follow this link: <%= @url %>.
+    </p>
+    <p>Thanks for using Stratus and have a great day!</p>
+  </body>
+</html>

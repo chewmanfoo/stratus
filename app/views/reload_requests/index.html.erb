@@ -1,0 +1,48 @@
+<%- model_class = ReloadRequest -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:latest) %></th>
+      <th><%= model_class.human_attribute_name(:build_number) %></th>
+      <th><%= model_class.human_attribute_name(:environment_id) %></th>
+      <th><%= model_class.human_attribute_name(:package) %></th>
+      <th><%= model_class.human_attribute_name(:role_id) %></th>
+      <th><%= model_class.human_attribute_name(:to_release_at) %></th>
+      <th><%= model_class.human_attribute_name(:email_notification_list) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @reload_requests.each do |reload_request| %>
+      <tr>
+        <td><%= link_to reload_request.id, reload_request_path(reload_request) %></td>
+        <td><%= reload_request.latest %></td>
+        <td><%= reload_request.build_number %></td>
+        <td><%= reload_request.environment_id %></td>
+        <td><%= reload_request.package %></td>
+        <td><%= reload_request.role_id %></td>
+        <td><%= reload_request.to_release_at %></td>
+        <td><%= reload_request.email_notification_list %></td>
+        <td><%=l reload_request.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_reload_request_path(reload_request), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      reload_request_path(reload_request),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_reload_request_path,
+            :class => 'btn btn-primary' %>

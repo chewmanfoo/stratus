@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Application name:</b>
+  <%= @approved_build.application_name %>
+</p>
+
+<p>
+  <b>Build number:</b>
+  <%= @approved_build.build_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_approved_build_path(@approved_build) %> |
+<%= link_to 'Back', approved_builds_path %>

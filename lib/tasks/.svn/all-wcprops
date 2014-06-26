@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/lib/tasks
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/lib/tasks/.gitkeep
+END
+cucumber.rake
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/tvly/build-tools/!svn/ver/10540/trunk/stratus/lib/tasks/cucumber.rake
+END

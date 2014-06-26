@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>A Deployment is awaiting YOUR approval</h1>
+    <p>
+      <%= @user.given_name %>, <%= @user_desc %> has submitted a Deployment request for <%= @deployment.full_name %> on Stratus at <%= @deployment.completed_at.to_s(:pretty) if @deployment.completed_at %>.  Business rules indicate that this deployment must be approved by YOU before it can be executed.  Please visit the link below to approve the Deployment, or simply click the 'I approve this request' link below. 
+    </p>
+    <p>
+      To read about this Deployment, just follow this link: <%= @url.gsub('/approve', '') %>.
+    </p>
+    <p>
+      To approve this Deployment immediately, click here: <a href="<%= @url %>">I approve this request</a>.
+    </p>
+    <p>Thanks for using Stratus and have a great day!</p>
+  </body>
+</html>

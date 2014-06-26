@@ -1,0 +1,14 @@
+FactoryGirl.define do 
+  factory :deployment do
+    # no idea what to do here
+    # supposed to build a Deployment instance
+    app = Application.find(282)
+    rle = Role.find(182)
+    env = Environment.find(2)
+
+    build_number '13.1.144-1'
+    role rle
+    environment env
+    applocation app
+  end
+end

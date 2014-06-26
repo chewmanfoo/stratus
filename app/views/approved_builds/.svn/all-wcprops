@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tvly/build-tools/!svn/ver/11814/trunk/stratus/app/views/approved_builds/_form.html.erb
+END

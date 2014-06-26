@@ -1,0 +1,27 @@
+<h1>Listing checkout_result_details</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Result</th>
+    <th>Checkout result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @checkout_result_details.each do |checkout_result_detail| %>
+  <tr>
+    <td><%= checkout_result_detail.name %></td>
+    <td><%= checkout_result_detail.result %></td>
+    <td><%= checkout_result_detail.checkout_result_id %></td>
+    <td><%= link_to 'Show', checkout_result_detail %></td>
+    <td><%= link_to 'Edit', edit_checkout_result_detail_path(checkout_result_detail) %></td>
+    <td><%= link_to 'Destroy', checkout_result_detail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Checkout result detail', new_checkout_result_detail_path %>

@@ -1,0 +1,12 @@
+A Deployment is awaiting YOUR approval 
+=========================================================================
+<%= @user.given_name %>, <%= @user_desc %> has submitted a Deployment request for 
+<%= @deployment.full_name %> on Stratus at <%= @deployment.completed_at.to_s(:pretty) %>.  
+Business rules indicate that this deployment must be approved by YOU before it can be executed.  
+Please visit the link below to approve the Deployment, or simply click the 'I approve this request' link below.
+
+To read about this Deployment, just follow this link: <%= @url.gsub('/approve','') %>.
+
+To approve this Deployment immediately, click here: <%= @url %>
+
+Thanks for using Stratus and have a great day!

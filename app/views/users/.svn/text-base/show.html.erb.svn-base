@@ -1,0 +1,82 @@
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:username) %></strong></dt>
+  <dd class="clearfix"><%= @user.username %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:given_name) %></strong></dt>
+  <dd class="clearfix"><%= @user.given_name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %></strong></dt>
+  <dd class="clearfix"><%= @user.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:svn_login) %></strong></dt>
+  <dd class="clearfix"><%= @user.svn_login %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:svn_password) %></strong></dt>
+  <dd class="clearfix"><%= @user.svn_password.gsub(/./,'*') if @user.svn_password %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:auth_key) %></strong></dt>
+  <dd class="clearfix"><%= @user.auth_key %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:authentication_token) %></strong></dt>
+  <dd class="clearfix"><%= @user.authentication_token %> <%= refresh_auth_token_button(@user) %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:default_mail_recipient) %></strong></dt>
+  <dd class="clearfix"><%= link_to @user.default_mail_recipient.name, @user.default_mail_recipient if @user.default_mail_recipient %></dd>
+</dl>
+
+<h3>Privileges</h3>
+<table class="table">
+  <thead><tr><td>Privilege</td><td>Value</td></tr></thead>
+  <tbody>
+  <tr><td>admin?</td><td><%= admin? %></td></tr> 
+  <tr><td>current_user_is_me?</td><td><%= current_user_is_me? %></td></tr>
+  <tr><td>manages_users?</td><td><%= manages_users? %></td></tr>
+  <tr><td>manages_database?</td><td><%= manages_database? %></td></tr>
+  <tr><td>manages_system?</td><td><%= manages_system? %></td></tr>
+  <tr><td>manages_threads?</td><td><%= manages_threads? %></td></tr>
+  <tr><td>creates_deployments?</td><td><%= creates_deployments? %></td></tr>
+  <tr><td>creates_switches?</td><td><%= creates_switches? %></td></tr>
+  <tr><td>approves?</td><td><%= approves? %></td></tr>
+  <tr><td>setup_incomplete?</td><td><%= setup_incomplete? %></td></tr>
+  <tr><td>executes_deployments?</td><td><%= executes_deployments? %></td></tr>
+  <tr><td>executes_switches?</td><td><%= executes_switches? %></td></tr>
+  <tr><td>views_reports?</td><td><%= views_reports? %></td></tr>
+  <tr><td>creates_reports?</td><td><%= creates_reports? %></td></tr>
+  <tr><td>refreshes_tripcase?</td><td><%= refreshes_tripcase? %></td></tr>
+  </tbody>
+</table>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              users_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_user_path(@user), :class => 'btn' %>
+  <% if current_user_is_me? %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              user_path(@user),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+  <% end %>
+</div>
+
+<h3>My Requests</h3>
+
+<% if creates_deployments? %>
+<h4>Deployment Requests</h4>
+<div>
+  <%= render :partial => "common/workload", :locals => {:workload => @deployments} %>
+</div>
+<% end %>
+
+<% if creates_switches? %>
+<h4>Switch Deployments</h4>
+<div>
+  <%= render :partial => "common/workload", :locals => {:workload => @switches} %>
+</div>
+<% end %>
+
+<% if refreshes_tripcase? %>
+<h4>Refreshes</h4>
+<div>
+  <%= render :partial => "common/refreshes", :locals => {:refreshes => @refreshes} %>
+</div>
+<% end %>

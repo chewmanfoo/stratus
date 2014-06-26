@@ -1,0 +1,51 @@
+<li class=dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <% if user_signed_in? %>
+      <%= current_user.given_name %>
+    <% else %>
+      <%= mail_to "jason.michael@sabre.com", "Request a new account", :subject => "I would like a new account on #{HOSTNAME}" %>
+      or <%= link_to "Sign in", new_user_session_path %>.
+    <% end %>
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li class="active"><%= link_to(destroy_user_session_path, :method => :delete) do %>
+      <i class="icon-off"></i> Sign Off
+      <% end %>
+    </li>
+    <li><%= link_to(user_url(current_user)) do %>
+      <i class="icon-user"></i> Edit Me
+      <% end %>
+    </li>
+    <li class="divider"></li>
+    <% if admin? %>
+      <% if manages_users? %>
+        <li><%= link_to(users_url) do %>
+          <i class="icon-user"></i> Manage Users
+          <% end %>
+        </li>
+        <li><%= link_to(groups_url) do %>
+          <i class="icon-globe"></i> Manage Groups
+          <% end %>
+        </li>
+      <% end %>
+      <% if manages_system? %>
+        <li><%= link_to(system_configurations_url) do %>
+          <i class="icon-adjust"></i> Stratus Configuration
+          <% end %>
+        </li>
+      <% end %>
+      <% if manages_threads? %>
+        <li><%= link_to(sidekiq_web_url, :target => "_blank") do %>
+          <i class="icon-random"></i> Sidekiq
+          <% end %>
+        </li>
+      <% end %>
+    <% end %>
+    <li class="divider"></li>
+    <li><%= link_to(suggestions_path) do %>
+      <i class="icon-comment"></i> Browse Suggestions
+      <% end %>
+    </li>
+  </ul>
+</li>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/tvly/build-tools/!svn/ver/12158/trunk/stratus/app/views/roles
+END
+edit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/app/views/roles/edit.html.erb
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tvly/build-tools/!svn/ver/10439/trunk/stratus/app/views/roles/index.html.erb
+END
+new.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/tvly/build-tools/!svn/ver/10953/trunk/stratus/app/views/roles/new.html.erb
+END
+show.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/app/views/roles/show.html.erb
+END
+_form.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/tvly/build-tools/!svn/ver/12702/trunk/stratus/app/views/roles/_form.html.erb
+END

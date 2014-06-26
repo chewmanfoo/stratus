@@ -1,0 +1,7 @@
+<%- headers = ["Name", "Version"] -%>
+<%= CSV.generate_line headers %>
+<%- @applications.each do |app| -%>
+<%- row = [ app.name,
+            app.version] -%>
+<%= CSV.generate_line row, {:row_sep => nil} %>
+<%- end -%>

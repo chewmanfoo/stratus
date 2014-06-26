@@ -1,0 +1,3 @@
+<h3>Rejection reason</h3>
+
+<%= render :partial => "rejection_reason" %>

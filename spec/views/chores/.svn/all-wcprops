@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/views/chores
+END
+new.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/views/chores/new.html.erb_spec.rb
+END
+show.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/views/chores/show.html.erb_spec.rb
+END
+edit.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/views/chores/edit.html.erb_spec.rb
+END
+index.html.erb_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/tvly/build-tools/!svn/ver/12663/trunk/stratus/spec/views/chores/index.html.erb_spec.rb
+END

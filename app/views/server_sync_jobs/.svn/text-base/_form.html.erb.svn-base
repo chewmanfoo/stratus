@@ -1,0 +1,14 @@
+<% if @current_jobs.size == 0 %>
+  <%= simple_form_for @server_sync_job, :html => { :class => 'form-horizontal' } do |f| %>
+    There are no parameters required to sync servers.  Click 'Begin' below to start the sync.
+    <div class="form-actions">
+      <%= f.button :submit, "Begin", :class => 'btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                  server_sync_jobs_path, :class => 'btn' %>
+    </div>
+  <% end %>
+<% else %>
+  <p>
+    An Server Sync Job is currently in progress.  Click <%= link_to "here", server_sync_jobs_url %> to view it.
+  </p>
+<% end %>  

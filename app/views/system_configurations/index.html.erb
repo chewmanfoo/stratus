@@ -1,0 +1,70 @@
+<%- model_class = SystemConfiguration -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+
+  <ul class="thumbnails" style="text-align:center;">
+  <% @system_configurations.each do |c| %>
+    <li>
+      <%= link_to(c) do %>
+        <% if c.in_effect? %>
+          <%= image_tag "padlock-icon-highlight.png", :width => "50px", :class => "thumbnail" %>
+        <% else %>
+          <%= image_tag "padlock-icon.png", :width => "50px", :class => "thumbnail" %>
+        <% end %>
+        <caption><%= c.name %></caption>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+
+<div class="form-actions">
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_system_configuration_path,
+            :class => 'btn btn-primary' %>
+</div>
+
+<% if admin? %>
+<div class="span4">
+  <h2>Sync Jobs</h2>
+
+  <div>
+    <div class="well well-small centered-container">
+      <%= link_to "Sync Applications", new_application_sync_job_url, :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+  <div>
+    <div class="well well-small centered-container">
+      <%= link_to "Sync Roles", new_role_sync_job_url, :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+  <div>
+    <div class="well well-small centered-container">
+      <%= link_to "Sync Servers", new_server_sync_job_url, :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+
+</div>
+<% end %>
+<% if admin? %>   
+<div class="span4">
+  <h2>Auth Keys</h2>
+
+  <ul class="thumbnails" style="text-align:center;">
+  <% @active_auth_keys.each do |key| %>
+    <li>
+      <%= link_to(key) do %>
+        <%= image_tag "key-icon.png", :width => "50px", :class => "thumbnail" %>
+        <caption><%= key.name %></caption>
+      <% end %>
+    </li>
+  <% end %>
+  </ul>
+
+  <div>
+    <div class="well well-small centered-container">
+    <%= link_to "Manage Auth Keys", auth_keys_url, :class => "btn btn-large btn-primary" %>
+    </div>
+  </div>
+</div>
+<% end %>

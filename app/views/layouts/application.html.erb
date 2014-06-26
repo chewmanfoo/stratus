@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stratus</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "sticky_footer", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "select2_stratus" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<% if user_signed_in? %>
+  <div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="http://<%= HOSTNAME %>">Stratus</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">  
+                Activity  
+                <b class="caret"></b> 
+              </a>
+              <ul class="dropdown-menu"> 
+                <li class="menu-item dropdown dropdown-submenu">
+                  <a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Deployments/Refreshes
+                    <b class="caret"></b>
+                  </a> 
+                  <ul class="dropdown-menu">
+                    <%= content_tag(:li, link_to("Browse Refreshes", refreshes_path)) if refreshes_tripcase? %>   
+                    <%= content_tag(:li, link_to("Browse Deployments", deployments_path)) if creates_deployments? %>
+                    <%= content_tag(:li, link_to("Browse Switches", switches_path)) if creates_deployments? %>
+                    <%= content_tag(:li, link_to("Browse Mail Recipients", mail_recipients_path)) if creates_deployments? %>
+                    <%= content_tag(:li, link_to("Browse Deployment Plans", deployment_plans_path)) if creates_deployments? %>
+                  </ul>
+                </li>
+                 <li class="menu-item dropdown dropdown-submenu">
+                  <a tabindex="-1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Workflows
+                    <b class="caret"></b>
+                  </a> 
+                  <ul class="dropdown-menu">   
+                    <%= content_tag(:li, link_to("Browse Chores", chores_path)) if admin? %>
+                    <%= content_tag(:li, link_to("Browse Flow Parts", flow_parts_path)) if admin? %>
+                    <%= content_tag(:li, link_to("Browse Flows", flows_path)) if admin? %>
+                  </ul>
+                </li>
+              </ul><!-- dropdown-menu -->
+            </li> <!-- dropdown -->
+          </ul> <!-- nav -->
+          <% if views_reports? %>
+            <ul class="nav">
+              <%= render "common/reports" %>
+            </ul>
+          <% end %>
+          <% if admin? %>
+            <ul class="nav">
+              <%= render "common/configs" %>
+            </ul>
+          <% end %> 
+          <ul class="nav">
+            <%= render "common/links" %>
+          </ul>          
+          <ul class="nav pull-right">
+            <%= render "common/user_nav" %>
+          </ul>
+          <ul class="nav pull-right">
+            <%= render "common/help_nav" %>
+          </ul>
+        </div> <!-- end of div nav-collapse -->
+      </div><!-- end of div container -->
+    </div><!-- end of div navbar-inner -->
+  </div><!-- end of div navbar navbar-fixed-top -->
+
+  <div class="container">
+  <% if @config.debug_mode? %>
+    <div class="alert alert-block">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Debug Mode</h4>
+      It's cool.  Stratus is currently in debug mode.  All actions are strictly 'no-op' - we'll execute all the actions but do nothing to the servers those actions may affect.  
+    </div>
+  <% end %>
+  <% unless @sidekiqex.zero? %>
+    <div class="alert alert-block">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Sidekiq is NOT RUNNING</h4>
+      Sidekiq is not running.  This is bad.  Without Sidekiq, stratus can't perform common functions. Contact DevServices immediately to get Sidekiq started ASAP!  Also, beware the Trivets!
+    </div>
+  <% end %>
+  <% if setup_incomplete? %>
+    <div class="alert alert-block">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4>Your user setup is INCOMPLETE</h4>
+      Your User account setup is not complete.  In order to use stratus, you need to save your email, subversion login and subversion password into your User account.  Click <%= link_to "here", edit_user_path(current_user) %> to correct this. 
+    </div>
+  <% end %>
+    <div class="row">
+      <div class="span1">
+        <%= render "common/deployment_tools" %>
+      </div>
+      <div class="span8">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+      <div class="span3">
+        <h2>About Stratus</h2>
+        Stratus is an application with far-reaching goals.  Ultimately, it will serve to unify and automate the build and deployment process.  Initially, it is intended to be simple and easily expandable.  <%= stratus_quote %> 
+        <hr />
+        <%= render "common/search" %>
+        <%= render "common/latest_releases" %>
+        <hr />
+        <%= render "common/latest_webapp" %>
+        <hr />
+        <div class="alert alert-info">
+          <b>Icon Legend</b><br />
+          <dl>
+            <dt><i class="icon-repeat"></i></dt>
+            <dd>the Activity is in retry mode.  The current task has failed at least once, and the engine will retry periodically until the task completes successfully.  You may need to do something to get the task to succeed.</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div><!-- end of div container -->
+
+  <div id="footer">
+    <div class="container">
+      <p class="muted credit"><i>Page render: <em><%= Time.now - @start_datetime %>s</em>.</i><span class="pull-right"><%= @rubyver %> :: <%= @railsenv %> <%= @railsver %> :: <%= @sidekiqstat %> :: <%= SystemConfiguration.in_effect.name %> mode</span></p>
+    </div>
+  </div>
+<% else %>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+          <a class="brand" href="http://<%= HOSTNAME %>">Stratus <i class="icon-cog icon-white"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span9">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+
+<div id="footer">
+  <div class="container">
+    <p class="muted credit"><i>Page render: <em><%= Time.now - @start_datetime %>s</em>.</i></p>
+  </div>
+</div>
+<% end %>
+</body>
+</html>

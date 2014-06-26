@@ -1,0 +1,31 @@
+<%- model_class = DeploymentRequest -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:package) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.package %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:build) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.build %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:environment) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.environment %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:auth_key) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.auth_key %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:timing_delay) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.timing_delay %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:workflow_state) %>:</strong></dt>
+  <dd class="clearfix"><%= @deployment_request.workflow_state %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              deployment_requests_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_deployment_request_path(@deployment_request), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              deployment_request_path(@deployment_request),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

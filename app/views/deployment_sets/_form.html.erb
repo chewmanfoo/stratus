@@ -1,0 +1,24 @@
+<%= simple_form_for @deployment_set, :html => { :class => 'form-horizontal' } do |f| %>
+  <% if notification = f.error_notification %>
+    <div class="alert alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">&times;</a>
+      <%= notification %>
+    </div>
+  <% end %>
+
+  <%= f.association :application %>
+  <%= f.input :build_number, :hint => "e.g. 12.13.133-1.  This must be exact." %>
+  <%= f.association :environments, as: :check_boxes, :hint => "Note: requests for deployment to CERT2, CERT1, STAGING or PROD may be rejected.  You should use REO for these requests." %>
+  <%= f.association :roles, :hint => "Choose the roles where you'd like this application to be deployed." %>
+  <%= f.input :run_pre_checkout %>
+  <%= f.input :run_post_checkout %>
+  <%= f.input :changelist, :hint => "Ok to leave blank." %>
+  <%= f.input :auto_accept, :hint => "After create, accept into my workload." %>
+  <%= f.input :auto_start, :hint => "After create, start the deployments." %>
+  <%= f.association :mail_recipient, :hint => "Please choose a Mail Recipient to recieve status emails.  If your Mail Recipient isn't listed, you must create one first." %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                deployment_sets_path, :class => 'btn' %>
+  </div>
+<% end %>

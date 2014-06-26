@@ -1,0 +1,12 @@
+<li class=dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    Reports 
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu">
+    <li><%= link_to "Browse Application Reports", applications_sync_report_index_path %></li>
+    <li><%= link_to "Browse Server Application Reports", applications_servers_sync_report_index_path %></li>
+    <li><%= link_to "Browse Environment Sync Reports", environment_sync_reports_path %></li>
+  </ul>
+</li>
+

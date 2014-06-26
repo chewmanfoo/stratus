@@ -1,0 +1,11 @@
+<%= simple_form_for environment, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :requires_reason, :hint => "Mark if the environment requires a reason to take it out of service (for example, a Change Record in Service Now)." %>
+  <%= f.association :next_environment, :as => :radio_buttons, :hint => "Pick the Environment to promote to after a successful deployment to this environment." %>
+  <%= f.input :tcs_environment, :hint => "A Tripcase Environment"  %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                environments_path, :class => 'btn' %>
+  </div>
+<% end %>
